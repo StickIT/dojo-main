@@ -1,0 +1,125 @@
+@mixin btn-dojo-primary($size: null, $padding: null){
+	.field{
+		position: relative;
+		width: $size;
+		.group-btn-dojo-primary{
+			width: 100%;
+			@include display-flex;
+			@include flex-direction(row);
+		  	@include align-items(center);
+			.icon{
+				float:left;
+				width:22px;
+				height:22px;
+				// background:white;
+				background-image: url(../resources/icons/dojo-icon-mail.svg);
+			}
+			input{
+				&[type=text], &[type=submit]{
+					background:transparent;
+					border:none;
+					@include border-radius(0);
+					@include box-shadow(#000 0 0 0 0);
+					font-family: $headline-font;
+					font-weight:100;
+					color:white;
+				}
+				&[type=text]{
+					width: 70%;
+				}
+				&[type=submit]{
+					width: 100%;
+					height: 100%;
+				}				
+				@include input-placeholder{
+					color: rgba(white, .6);
+				}
+			}
+			z-index:1;
+			padding: $padding 20px;
+			overflow: hidden;
+			@include dojo-primary-ramp();
+			@include border-radius(6px);
+			@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($dojo-primary, .3) 0 0px 30px);			
+			&:hover{
+				@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($dojo-primary, .6) 0 0px 30px);
+			}
+			&:before{
+				content: "";
+				position: absolute;
+				top: -15px;
+				left: 0;
+				width:100%;
+				height:20px;
+				@include border-radius(#{50%} / 25%);
+				background:rgba(#000, .15);
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: -15px;
+				left: 0;
+				width:100%;
+				height:20px;
+				@include border-radius(#{50%} / 25%);
+				background:rgba($dojo-primary, .35);
+			}
+			.input-group-btn{
+				position: absolute;
+				top: 0;
+				padding-right:10px;
+				right: -10px;
+				width: 20%;
+				height: 100%;
+				background: rgba(darken($dojo-primary, 30%), .35);
+				overflow: hidden;
+				@include box-shadow(rgba(#000, .35) 0 0px 1px 1px, rgba($dojo-primary, .25) 0 1px 1px 1px inset);	
+				@include transition(background .3s ease, transform .3s ease);		
+				@include skewX(-15deg);
+				&:before{
+					content:"";
+					position: absolute;
+					width: 50px;
+					height: 100%;
+					background:rgba($dojo-primary, .5);
+					@include translateX(-60px);
+					@include transition(transform .3s ease-out, width .3s ease-out);	
+				}
+				&:after{
+					content:"";
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-top: -15px;
+					margin-left: -20px;
+					// background:white;
+					width: 30px;
+					height: 30px;
+			  		// -webkit-mask-image: url(../resources/icons/dojo-icon-arrow-right.svg);
+					background-image: url(../resources/icons/dojo-icon-arrow-right.svg);
+					@include skewX(15deg);	
+				}
+				&:hover{
+					background: rgba(darken($dojo-primary, 50%), .35);					
+					&:before{
+						width:5px;
+						@include translateX(100px);
+					}
+				}
+			}
+			@include transition(box-shadow 1s ease);
+		}			  			
+		.shadow{		
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width:90%;
+			margin-left:-45%;
+			height:20px;
+			background:rgba(#000, 1);
+			@include border-radius(#{50%} / 25%);
+			@include box-shadow(rgba(#000, 1) 0 0px 10px 0px);
+			z-index:0;
+		}
+	}
+}

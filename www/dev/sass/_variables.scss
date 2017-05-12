@@ -15,35 +15,69 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-primary:         #D81313 !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+// Dojo's color
+$dojo-primary: 			#D81313 !default;
+$dojo-darkprimary:      #8B0000 !default;
+$dojo-lightprimary:     #EB4F50 !default;
+$dojo-blue: 			#2D4793 !default;
+$dojo-lightblue: 		#27355E !default;
+$dojo-softblue: 		#1C2338 !default;
+$dojo-darkblue: 		#050F21 !default;
+$dojo-blackblue:		#010712 !default;
+
+// Dojo's Gradient
+@mixin dojo-primary-ramp{
+	@include background-image(linear-gradient($dojo-primary, darken($dojo-primary, 10%)));
+}
+
+// Video Split Size
+$video-split-size:      540px !default;
+
+// Default Margin & Padding Size
+$space-size:      		20px !default;
+
+// SVG Fix (Firefox & IE)
+//@function hexToRgb($hexColor) {
+//  @return "#{red($hexColor)},#{green($hexColor)},#{blue($hexColor)}";
+//}
+
+// Dojo's font
+$headline-font : "jaf-facitweb" !default;
+$regular-font : "Gotham" !default;
+$regular-letterspacing : 2px;
+
+.redtag{
+	color:$dojo-primary;
+}
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               $dojo-blackblue !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            white !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      $dojo-primary !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  $regular-font;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -316,10 +350,26 @@ $screen-lg-min:              $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min !default;
 
+// 4K res
+$screen-xlg-min: 			1366px !default;
+$screen-fhd-min: 			1920px !default;
+$screen-rt-min: 			2560px !default;
+$screen-rt15-min: 			2880px !default;
+$screen-uhd-min: 			3840px !default;
+$screen-4k-min: 			4096px !default;
+$screen-8k-min: 			8192px !default;
+
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm-min - 1) !default;
-$screen-sm-max:              ($screen-md-min - 1) !default;
-$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-xs-max:             ($screen-sm-min - 1) !default;
+$screen-sm-max:             ($screen-md-min - 1) !default;
+$screen-md-max:             ($screen-lg-min - 1) !default;
+$screen-lg-max:             ($screen-xlg-min - 1) !default;
+$screen-xlg-max:            ($screen-fhd-min - 1) !default;
+$screen-fhd-max:            ($screen-rt-min - 1) !default;
+$screen-rt-max:             ($screen-rt15-min - 1) !default;
+$screen-rt15-max:           ($screen-uhd-min - 1) !default;
+$screen-uhd-max:            ($screen-4k-min - 1) !default;
+$screen-4k-max:             ($screen-8k-min - 1) !default;
 
 
 //== Grid system
@@ -362,23 +412,23 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    60px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:             $dojo-softblue !default;
+$navbar-default-bg:                $dojo-softblue !default;
+$navbar-default-border:            transparent !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          darken($navbar-default-link-color, 15%) !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-color:         $dojo-lightprimary !default;
+$navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 

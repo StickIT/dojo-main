@@ -1,0 +1,205 @@
+.navbar{
+	z-index:100;
+	position:fixed;
+	top: 0;
+	width:100%;
+	background-image: radial-gradient(50% 100%, darken($dojo-blue, 20%) 50%, $dojo-darkblue 100%);
+	font-size: 12px;
+	letter-spacing: 0.50px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	@include border-radius(0 !important);
+	@include box-shadow(0 0px 8px 0 rgba(0,0,0,0.80), 0 -1px 0 0 rgba($dojo-lightblue,.45) inset);
+	@include transition(transform .3s linear, opacity .3s linear);
+	.icon-bar{
+		background:white !important;
+	}
+	&.nav-down{		
+		@include translateY(-100px);
+		opacity:0;
+	}
+	&.nav-up{
+		@include translateY(0);
+		opacity:1;
+	}
+	.background{
+		background: url(../resources/bg/dojo-pattern-01b.svg) repeat 20%;
+		background-size:20%;
+		.container{
+			.navbar-header{
+				a.navbar-brand{
+					padding: 10px 15px;
+					img{
+						width: 40px;
+						height: auto;
+						display: block;
+						margin: auto;
+					}
+				}
+			}
+			.navbar-collapse{
+				ul.navbar-nav{
+					li{
+						>a{
+							padding-bottom:20px;
+							padding-top: 22px;
+						}
+						&.book-ticket{
+							padding: 14px 10px;
+							a{
+								display:block;
+								padding:7px 10px 5px 10px;
+								background:$dojo-primary;
+								@include border-radius(2px);
+
+								&:hover, &:focus{
+									background:white;
+									color: $dojo-primary;
+								}
+								i.fa{
+									margin-right: 4px;
+								}
+							}
+						}
+						&.social{
+							padding: 12px 30px 10px 30px;
+				  			ul{
+				  				margin:0;
+				  				.icon-social{
+				  					width: 34px;
+				  					height: 34px;
+									// background:$dojo-blackblue;
+									margin:0 2px;
+									a{
+										display: block;
+										width: 100%;
+										height: 100%;
+									}
+									&:hover{
+										opacity: .90;
+									}
+						  			&.facebook{		
+			    						background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
+						  			}
+						  			&.twitter{
+			    						background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
+						  			}
+						  			&.linkedin{
+			    						background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
+						  			}
+						  			&.youtube{
+			    						background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
+						  			}
+				  				}
+				  			}
+				  		}
+						&.language{
+							font-size: 12px;
+							font-weight: 300;
+							padding: 20px 10px;
+							ul{
+								margin:0;
+								li{
+									a{
+										@include transition(background .25s ease, color .25s ease);
+										&:hover, &:focus{
+											opacity:.75;
+											color: #fff;
+										}
+									}
+								}
+								.active-lang{
+									a{
+										display:block;
+										padding:2px 5px 1px 5px;
+										background:$dojo-primary;
+										@include border-radius(2px);
+										@include transition(background .25s ease, color .25s ease);
+										&:hover, &:focus{
+											background:white;
+											opacity: 1;
+											color:$dojo-primary;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.top{
+		position:relative;
+		.background{
+			.container{
+				.navbar-header{
+					width: 100%;
+					position: absolute;
+					left: 0;
+					@include display-flex;
+					@include flex-direction(column);
+				  	@include align-items(center);
+				  	text-align: center;
+					.navbar-brand{
+						padding: 0;
+						margin-top: 0;
+						/* margin-left: 20px; */
+						img{
+							height: 180px;
+							width: auto;
+						}
+					}
+				}
+				.navbar-collapse{
+					
+					.navbar-nav{
+						width: 100%;
+						text-align: center;
+						@include display-flex;
+						@include flex-direction(row);
+					  	@include align-items(center);
+					  	.left,.right{
+					  		text-align: center;
+							@include display-flex;
+							@include flex-direction(row);
+						  	@include align-items(center);		
+						}
+						.left{
+					  		@include justify-content(space-around);
+					  		padding-right: $space-size*4;
+					  		li{
+								margin-right: $space-size;
+								&:last-child{
+									margin-right: 0;
+								}					
+							}
+					  	}
+						.right{
+					  		@include justify-content(space-around);
+					  		padding-left: $space-size*3;
+					  		li{
+								margin-left: $space-size;
+								&:last-child{
+									margin-left: 0;
+								}
+								&.book-ticket{
+									margin-left: $space-size;	
+								}					
+							}
+					  	}		
+						li{
+							&.language{
+								position: absolute;
+								right:0;
+								li.active-lang{
+									padding: 0;
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+} 

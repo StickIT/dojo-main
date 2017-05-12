@@ -1,17 +1,582 @@
 <!doctype html>
 <html>
     <head>
+        <title>International Esports Business Conference - Dojo Esport</title>
         <meta charset="utf-8">
-        <meta name="description" content="Your first best practice project !">
+        <meta name="description" content="International Esports Business Conference">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Best practice project</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="author" href="humans.txt">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="resources/favicon/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="resources/favicon/manifest.json">
+        <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#d71313">
+        <meta name="apple-mobile-web-app-title" content="Dojo Esport">
+        <meta name="application-name" content="Dojo Esport">
+        <meta name="theme-color" content="#050f21">
+        <script src="https://use.fontawesome.com/944b0dd009.js"></script>
+        <!--[if IE]>
+            <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!-- Typekit -->
+        <script src="https://use.typekit.net/iea2dtj.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
-        <section class="container">
-            <h1>Welcome to your clean best practice !</h1>
+        <!-- Navbar slide -->
+        <nav id="navbarTop" class="navbar nav-down">
+            <div class="background">
+              <div class="container">
+                <!-- Optimisation Mobile -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="resources/logo/dojo-esport-light-icon.svg" alt="logo"></a>
+                </div>
+                <!-- Menu Fix -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#accueil">Accueil <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#programme">Programme</a></li>
+                    <li><a href="#intervenants">Intervenants</a></li>
+                    <li><a href="#informations">Informations</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
+                    <li class="book-ticket"><a href="#billet"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
+                    <li class="social">
+                        <ul class="list-unstyled list-inline">
+                            <li class="icon-social facebook"><a href="https://www.facebook.com/SmartCastNinja/" target="_blank">&nbsp;</a></li>
+                            <li class="icon-social twitter"><a href="https://twitter.com/SmartCastNinja" target="_blank">&nbsp;</a></li>
+                            <li class="icon-social linkedin"><a href="https://www.linkedin.com/showcase/11081851/" target="_blank">&nbsp;</a></li>
+                            <li class="icon-social youtube"><a href="https://www.youtube.com/channel/UCkieVDin09iCncT98evIfzw" target="_blank">&nbsp;</a></li>
+                        </ul>
+                    </li>
+                    <li class="language">
+                        <ul class="list-unstyled list-inline">
+                            <li class="active-lang"><a href="/">FR</a></li>
+                            <li><a href="/en">EN</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </nav>
+        <!-- Navbar top -->
+        <nav id="navbarMain" class="navbar top hidden-xs">
+            <div class="background">
+              <div class="container">
+                <!-- Optimisation Mobile -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="index.html"><img src="resources/logo/dojo-esport-color-light.svg" alt="logo"></a>  
+                </div>
+                <!-- Menu Fix -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                  <ul class="nav navbar-nav">
+                    <div class="col-xs-6 left">
+                        <li><a href="#accueil">Accueil <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#programme">Programme</a></li>
+                        <li><a href="#intervenants">Intervenants</a></li>
+                    </div>
+                    <div class="col-xs-6 right">
+                        <li><a href="#informations">Informations</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
+                        <li class="book-ticket"><a href="#billet"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
+                    </div>
+                    <li class="language">
+                        <ul class="list-unstyled list-inline">
+                            <li class="active-lang"><a href="/">FR</a></li>
+                            <li><a href="/en">EN</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </nav>
+        <!-- Header -->
+        <header class="container-full">
+             <section class="firepower">
+                <video id="my-video" autoplay loop>
+                    <source src="/resources/video/dojo-firepower.webm" type="video/webm">
+                    <source src="/resources/video/dojo-firepower.mp4" type="video/mp4">
+                    <source src="/resources/video/dojo-firepower.ogv" type="video/ogg">
+                    <source src="/resources/video/dojo-firepower.m4v" type="video/m4v">
+                </video>
+            </section>
+            <section class="container-full videoHeader">
+                <div class="content">
+                    <h1 class="baseline">
+                        <a href="index.html"><img src="resources/logo/dojo-esport-color-light.svg" alt="logo" class="visible-xs logo"></a>
+                        Une conférence <span class="redtag">business internationale</span>
+                        <br>
+                        <span class="subBaseline">Esports is made together</span>
+                    </h1>
+                </div>
+                <div class="bgVideoLoop">
+                    <div class="overlay"></div>
+                    <div id="videoLoop" class="embed-responsive embed-responsive-16by9 videoLoop">
+                        <video autoplay loop muted>
+                            <source src="/resources/video/dojo-background.webm" type="video/webm">
+                            <source src="/resources/video/dojo-background.mp4" type="video/mp4">
+                            <source src="/resources/video/dojo-background.ogg" type="video/ogg">
+                           <source src="/resources/video/dojo-background.m4v" type="video/m4v">
+                        </video>  
+                    </div>
+                </div>
+                <div class="splitSkew">
+                    <svg viewBox="0 0 20 20" preserveAspectRatio="none">
+                        <polygon fill=white stroke-width=0 points="0 20,20 0,20 20,0 20" />
+                    </svg>
+                </div>
+            </section>
+        </header>
+        <!-- Meeting -->
+        <section class="container-full meeting">
+            <section class="container">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="heading">
+                        <div class="icon"><img src="resources/icons/dojo-icon-block-conference.svg" alt=""></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Conférence</div>
+                        <div class="description">Marques, animateurs, esportifs, associations... au Dojo Esport, des experts internationaux se mobilisent pour animer les échanges et construire avec vous le futur de l'esport.</div>
+                        <div class="icon"><img src="resources/icons/dojo-icon-circle-dot-blue.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="heading">
+                        <div class="icon"><img src="resources/icons/dojo-icon-block-networking.svg" alt=""></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Networking</div>
+                        <div class="description">Une occasion unique de développer votre réseau, de côtoyer de nombreux professionnels de l'esport et d'initier des contacts à travers des sessions de networking dédiées.</div>
+                        <div class="icon"><img src="resources/icons/dojo-icon-circle-dot-blue.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="heading">
+                        <div class="icon"><img src="resources/icons/dojo-icon-block-workshop.svg" alt=""></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="content">
+                        <div class="title">Workshop</div>
+                        <div class="description">En mêlant des profils aussi variés qu'intéressants, les ateliers thématiques du Dojo Esport vous permettront de suivre les tendances du secteur et de trouver des solutions à vos problématiques.</div>
+                        <div class="icon"><img src="resources/icons/dojo-icon-circle-dot-blue.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
         </section>
+        <!-- Schedule -->
+        <section class="container-full schedule">            
+            <h1 class="background row">
+                <span class="topline">Réservez votre journée</span>
+                <span class="baseline">HÔTEL DE VILLE DE PARIS <span class="red">-</span> 17 JUIN 2017</span>
+            </h1>   
+        </section>
+        <!-- Program -->
+        <section class="container-full program">   
+            <section class="container">         
+                <div class="title">
+                    <span class="text">PROGRAMME</span>
+                </div> 
+                <div class="planning">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 event-block simple">
+                            Ouverture des portes
+                            <span class="pull-right">9h00</span>
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-conf"></div>
+                                <div class="text">
+                                    Conférence d'introduction
+                                    <span class="pull-right">9h30</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Présentation de la journée </br>par Olivier Morin & J.F. Martins
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-conf"></div>
+                                <div class="text">
+                                    Conférence esport
+                                    <span class="pull-right">10h15</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                L’esport, nouvel outil de soft power ?
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 event-block simple alternative">
+                            Pause
+                            <span class="pull-right">11h15</span>
+                        </div>                        
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-conf"></div>
+                                <div class="text">
+                                    Conférence esport
+                                    <span class="pull-right">11h30</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Nous avons trouvé le R.O.I. !
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-network networking"></div>
+                                <div class="text networking">
+                                    Pause & networking
+                                    <span class="pull-right">12h30</span>
+                                </div>
+                            </div>  
+                        </div>                      
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-workshop"></div>
+                                <div class="text">
+                                    Workshop
+                                    <span class="pull-right">14h00</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Développons nos associations esport
+                            </div> 
+                            <div class="or">
+                                <div class="content">ou</div>
+                            </div>
+                            <div class="detail">
+                                Joueurs professionnels, nouveaux ambassadeurs ?
+                            </div> 
+                            <div class="or">
+                                <div class="content">ou</div>
+                            </div>
+                            <div class="detail">
+                                L’esport aux J.O. c’est pour bientôt ?
+                            </div> 
+                        </div>
+                    </div>                    
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 event-block simple alternative">
+                            Pause
+                            <span class="pull-right">15h00</span>
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-workshop"></div>
+                                <div class="text">
+                                    Workshop
+                                    <span class="pull-right">15h15</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Être un tremplin à l’esport associatif en France
+                            </div> 
+                            <div class="or">
+                                <div class="content">ou</div>
+                            </div>
+                            <div class="detail">
+                                Faut-il mieux protéger les joueurs ?
+                            </div> 
+                            <div class="or">
+                                <div class="content">ou</div>
+                            </div>
+                            <div class="detail">
+                                Comment innover en tant que marque ?
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 event-block simple alternative">
+                            Pause
+                            <span class="pull-right">16h15</span>
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-conf"></div>
+                                <div class="text">
+                                    Keynote - l’oeil smartcast
+                                    <span class="pull-right">16h30</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Les tendances du marché esport
+                            </div> 
+                        </div>                      
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-conf"></div>
+                                <div class="text">
+                                    Conférence - la voix du dojo
+                                    <span class="pull-right">16h45</span>
+                                </div>
+                            </div>  
+                            <div class="detail">
+                                Pensées prospectives
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 event-block multiple">
+                            <div class="heading">
+                                <div class="icon icon-network networking"></div>
+                                <div class="text networking">
+                                    Cocktail de clotûre
+                                    <span class="pull-right">17h15</span>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="col-xs-12 event-block simple">
+                            Fermeture des portes
+                            <span class="pull-right">18h30</span>
+                        </div>                        
+                    </div>
+                </div>  
+            </section>
+        </section>
+        <!-- Speakers -->
+        <section class="container-full speakers">
+            <div class="container-full">
+                <div class="title">
+                    Intervenants
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-stephane-euthine.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Stéphan Euthine</div>
+                            <div class="fonction">Co-propriétaire/COO LDLC Event</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-koen-schobbers.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Koen Schobbers</div>
+                            <div class="fonction">Fondateur de la commission athlète à IeSF, présentateur Fox Sports</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-benoit-pagotto.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Benoit Pagotto</div>
+                            <div class="fonction">Directeur Marketing de Fnatic</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-sophia-metz.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Sophia Metz</div>
+                            <div class="fonction">Fondatrice Meltdown esports bar</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-jan-pommer.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Jan Pommer</div>
+                            <div class="fonction">Directeur des Relations avec les fédérations et équipes Turtle Entertainment/ESL, Allemagne</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-jb-desmaizieres.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Jean-Baptiste Desmaizieres</div>
+                            <div class="fonction">France Marketing Group Manager chez Ubisoft</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>                
+                <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-olivier-ozoux.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Olivier Ozoux</div>
+                            <div class="fonction">Président de aAa</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-jf-martins.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Jean-François Martins</div>
+                            <div class="fonction">Adjoint à la maire de Paris en charge des sports et du tourisme</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-nicolas-weisz.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Nicolas Weisz</div>
+                            <div class="fonction">Avocat spécialisé dans le droit du sport et ancien basketteur pro</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                        <div class="portrait">
+                            <div class="border"></div>
+                            <img src="resources/photos/photo-carson-knuth.png" class="figure-img img-fluid" alt="Stéphane Euthine">
+                        </div>
+                        <div class="infos">
+                            <div class="name">Carson Knuth</div>
+                            <div class="fonction">Co-propriétaire de Rogue</div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners -->
+        <section class="container-full partners">
+            <div class="container">                       
+                <div class="title">
+                    <span class="text">En partenariat avec</span>
+                </div> 
+            </div>
+            <div class="container-full logo">
+                <div class="container">
+                    <a href="http://smartcast.ninja/" target="_blank">
+                        <img src="resources/logo/logo-smartcast-ninja.svg" alt="logo smartcast">
+                    </a>
+                    <a href="http://www.paris.fr/" target="_blank">
+                        <img src="resources/logo/logo-ville-paris.svg" alt="logo ville de paris">
+                    </a>
+                </div>
+            </div>        
+        </section>
+        <!-- Tickets -->
+        <section class="container-full tickets">
+            <div class="container">
+                <div class="col-xs-12 col-sm-4 card">
+                    <div class="head">
+                        <span class="icon"><img src="resources/icons/dojo-icon-shuriken-early.svg"" alt=""></span>
+                        <span class="nom">Early Ninja</span>
+                        <span class="prix">150€</span>
+                    </div>
+                    <div class="inside">
+                        <div class="stock">
+                            <span class="type">Standard - <strong>En stock</strong></span>
+                            <div class="shadow"></div>
+                        </div>   
+                        <div class="citation">Celui qui aime à apprendre </br>est bien près du savoir</div>
+                        <ul class="liste">
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">2 Workshops au choix</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Accès aux conférences</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Wishlist : Choisissez qui vous souhaitez rencontrer</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Cocktails offerts</li>
+                        </ul>
+                    </div>  
+                    <div class="infos">Nombre de places limité, dans la limite des places disponibles</div>
+                    <a class="acheter" href="billet.html">Acheter</a>
+                </div>     
+                <div class="col-xs-12 col-sm-4 card">
+                    <div class="head">
+                        <span class="icon"><img src="resources/icons/dojo-icon-shuriken-ninja.svg"" alt=""></span>
+                        <span class="nom">Billet Ninja</span>
+                        <span class="prix">300€</span>
+                    </div>
+                    <div class="inside">
+                        <div class="stock">
+                            <span class="type">Standard - <strong>En stock</strong></span>
+                            <div class="shadow"></div>
+                        </div>   
+                        <div class="citation">Apprendre sans réfléchir est vain.</br> Réfléchir sans apprendre est dangereux</div>
+                        <ul class="liste">
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">2 Workshops au choix</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Accès aux conférences</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Wishlist : Choisissez qui vous souhaitez rencontrer</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Cocktails offerts</li>
+                        </ul>
+                    </div>  
+                    <div class="infos">Dans la limite des places disponibles</div>
+                    <a class="acheter" href="billet.html">Acheter</a>
+                </div>    
+                <div class="col-xs-12 col-sm-4 card">
+                    <div class="head">
+                        <span class="icon"><img src="resources/icons/dojo-icon-shuriken-genine.svg"" alt=""></span>
+                        <span class="nom">Billet Genin</span>
+                        <span class="prix">50€</span>
+                    </div>
+                    <div class="inside">
+                        <div class="stock">
+                            <span class="type">Standard - <strong>En stock</strong></span>
+                            <div class="shadow"></div>
+                        </div>   
+                        <div class="citation">Sans principes communs, </br>ce n’est pas la peine de discuter</div>
+                        <ul class="liste">
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Workshops spécifiques</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Accès aux conférences</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Cocktails offerts</li>
+                            <li><img src="resources/icons/dojo-icon-circle-dot-ul.svg">Réservé aux associations</li>
+                        </ul>
+                    </div>  
+                    <div class="infos">Nombre de places limité, dans la limite des places disponibles</div>
+                    <a class="acheter" href="billet.html">Acheter</a>             
+                </div>
+            </div>
+        </section>
+        <section class="newsletter"></section>
+        <section class="information"></section>
+        <footer class="footer"></footer>
 
         <script src="js/main.min.js"></script>
     </body>

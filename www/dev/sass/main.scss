@@ -4,7 +4,14 @@
 @import 'variables';
 // Bootstrap
 @import '../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../../bower_components/sweetalert2/src/sweetalert2';
+// Tools
+@import 'font';
+@import 'button';
+@import 'modal';
+@import 'billet';
 // Desktop
 @import 'home';
+@import 'navbar';
 // Responsives
-@import '_home-responsive'
+@import '_home-responsive';

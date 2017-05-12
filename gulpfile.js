@@ -22,7 +22,8 @@ gulp.task('bower', function() {
 gulp.task('lib', function() {
     return gulp.src([
         config.bowerDir + '/jquery/dist/jquery.js',
-        config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js'
+        config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
+        config.bowerDir + '/seethru/src/seeThru.js'
     ]).pipe(uglify()).pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.devPath + '/js/'));
 });
@@ -30,7 +31,9 @@ gulp.task('lib', function() {
 gulp.task('js', function() {
     return gulp.src([
         config.devPath + '/js/jquery.js', 
-        config.devPath + '/js/**/*.js'
+        config.devPath + '/js/bootstrap.js',
+        config.devPath + '/js/seeThru.js',
+        config.devPath + '/js/app.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())

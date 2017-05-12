@@ -1,34 +1,257 @@
 // Smartphone portrait
 @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) and (orientation : portrait){
-	body{
-		background: red;
+	body{		
+		&:before{
+			content: "IPHONE PORTRAIT";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
+	}
+	@include btn-dojo-primary(300px !important,  14px !important);
+
+	.partTop{	
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		.content{	
+			@include display-flex;
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
+		  	.logo{
+		  		width:35%;
+		  		margin:0 auto;
+		  		margin-bottom: 30px;
+		  	}
+		  	.baseline{
+		  		top:0 !important;
+		  	}
+		}
+	}
+	.partTop{
+		position: relative;
+		width: 100%;
+		height: 500px !important;
+		top: 0;
+		left: 0;
+		.imageBG{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 600px !important;
+			// @include background(image-url("../resources/bg/dojo-bg-lcs.jpg"));
+			// background-position: top center;
+			#videoLoop{
+				video{
+					height: 600px !important;
+					width: auto !important;
+				}
+			}
+			.embed-responsive{
+				overflow: visible !important;
+			}
+			.overlay{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 600px !important;
+				background: rgba($dojo-darkblue, .9);
+			}
+		}
+	}
+
+	.module:nth-child(2){
+		margin:40px 0;
+	}
+
+	.billet{
+		height: auto !important;
+		.container{
+			display:block !important;
+			.card{
+				margin:20px 0 !important;
+				&:first-child{
+					@include scale(1);
+				}
+			}
+		}
+	}
+
+	.newsletter{
+		.title{
+			.text{
+				letter-spacing: 0 !important;
+			}
+		}
+		.action{
+			img{
+				display:none !important;
+			}
+		}
+	}
+	
+	.informations{
+		.block{
+			position: relative !important;
+			width: 100% !important;
+			margin-right: 0 !important;
+			margin-top: 0 !important;
+		}
+	}
+
+	.sponsor{
+		.title{
+			img{
+				display:none !important;
+			}
+		}
+		.block{
+			@include flex-direction(column !important);
+			a{
+				padding: 0 !important;
+				margin: 20px 0 !important;
+			}
+		}
+	}
+	#videoLoop{
+		overflow:hidden;
 	}
 }
 
 // Smartphone landscape
 @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) and (orientation : landscape){
-	body{
-		background: yellow;
+	body{		
+		&:before{
+			content: "IPHONE LANDSCAPE";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
 	}
+	
 }
 
 // Tablet portrait
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation : portrait) {
-	body{
-		background: blue;
+	body{		
+		&:before{
+			content: "TABLET PORTRAIT";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
 	}
+	
 }
 
 // Tablet landscape
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation : landscape) {
-	body{
-		background: green;
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (orientation : landscape) {
+	body{		
+		&:before{
+			content: "TABLET LANDSCAPE";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
 	}
 }
 
-// Normal Desktop
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+// LG Desktop
+@media (min-width: $screen-xlg-min) and (max-width: $screen-xlg-max){
 	body{
-		background: $body-bg;
+		&:before{
+			content: "1366x768 DESKTOP";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
+	}
+
+	@include btn-dojo-primary(320px !important, 10px !important);
+	.partBaseline{
+	  	.content{
+	  		.logo{
+	  			width: 140px !important;
+	  			margin-bottom:12px !important;
+	  		}
+			// .baseline{
+			// 	font-size: 26px !important;
+			// 	line-height:14px !important;
+			// 	.subBaseline{
+			// 		font-size:9px !important;
+			// 	}	
+			// }
+	  	}
+	}
+
+	.billet{
+		.container{
+			.card{
+				&:first-child{
+					@include scale(1.07);
+				}
+			}
+		}
+	}
+	
+}
+// FHD Desktop
+@media (min-width: $screen-fhd-min) and (max-width: $screen-fhd-max){
+	body{
+		&:before{
+			content: "1920x1080 DESKTOP";
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding:10px 20px;
+			font-size: 20px;
+			background:white;
+			color:black;
+			z-index:10;
+			display:none;
+		}
+	}
+	.billet{
+		.container{
+			.card{
+				&:first-child{
+					@include scale(1.07);
+				}
+			}
+		}
 	}
 }
