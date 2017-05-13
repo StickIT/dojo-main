@@ -4,10 +4,9 @@ html, body{
 }
 
 body{
-	background: $dojo-blackblue;
+	background: $dojo-darkblue;
 	color:white;
-
-	@include btn-dojo-primary(500px !important,  14px !important);
+	@include btn-dojo-primary(500px,  14px);
 }
 // Tools
 a{
@@ -115,6 +114,7 @@ header{
 		@include display-flex;
 		@include flex-direction(column);
 		@include align-items(stretch);
+		@include justify-content(center);
 		.heading{
 			position: relative;
 			width: 70px;
@@ -155,6 +155,9 @@ header{
 			@include align-items(center);
 			@include justify-content(center);
 			.title{
+			 	@include align-self(center);
+			 	@include display-flex;
+			 	@include align-items(center);
 				position: absolute;
 				top: -13px;
 				width: auto;
@@ -166,12 +169,17 @@ header{
 				text-transform: uppercase;
 			}
 			.description{
+				@include align-self(flex-start);
+			 	@include display-flex;
+			 	@include align-items(center);
 				line-height: 24px;
 				font-size: ($font-size-base)-1;
 				font-weight: 300;
-				@include align-self(flex-start);
 			}
 			.icon{
+			 	@include align-self(center);
+			 	@include display-flex;
+			 	@include align-items(center);
 				position: absolute;
 				bottom: -20px;
 				width: 40px;
@@ -262,7 +270,7 @@ header{
 	.planning{
 		.event-block{
 			position: relative;
-			padding: $space-size/2 $space-size;
+			padding: $space-size/2 15px;
 			text-transform: uppercase;
 			font-size: $font-size-base;
 			margin-bottom:10px;
@@ -280,10 +288,10 @@ header{
 				@include border-radius(5px);
 			}
 			&.simple{
-				line-height: 24px;
 				@include border-radius(5px);
 			 	// @include background-image(linear-gradient($dojo-primary, darken($dojo-primary, 2%)));
 			 	background: $dojo-primary;
+			 	padding-top: $space-size/2+2;
 			 	&.alternative{
 			 		background: darken($dojo-blue,20%);
 			 	}
@@ -296,11 +304,11 @@ header{
 				@include display-flex;
 				@include flex-direction(row);
 				@include align-items(stretch);
+				@include justify-content(center);
 				position: relative;
-				line-height: 44px;
+				height: auto;
 				.icon{
 					width: 44px;
-					height: 44px;
 					top: 0;
 					left: 0;
 					@include border-top-left-radius(5px);
@@ -322,11 +330,23 @@ header{
 					flex:1;
 					padding: 0 $space-size;
 					background-color: $dojo-darkblue;
+					padding-top: $space-size/2+2;
+					padding-bottom: $space-size/2;
+				}	
+				.hour{
+				 	@include align-self(stretch);
+				 	@include display-flex;
+				 	@include align-items(center);
+				 	@include justify-content(flex-end);
+					text-align: right;
+					background-color: $dojo-darkblue;
+					padding-top: $space-size/2;
+					padding-bottom: $space-size/2;
 					@include border-top-right-radius(5px);
 					&.networking{
 						@include border-bottom-right-radius(5px);
 					}	
-				}			
+				}		
 			}
 			.detail{
 				display: inline-block;
@@ -472,36 +492,17 @@ header{
 		@include align-items(center);
 		@include justify-content(center);
 		height: 40px;
-		margin-bottom: $space-size;
-		&:before{
-			content:"";
-			position: relative;
-			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
-			background-size: contain;
-			width:100%;
-			height: 100%;
-			@include transform(rotate(180deg) scaleY(.5));
-			flex:1;
-			opacity: .2;
-		}
-		&:after{
-			content:"";
-			position: relative;
-			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
-			background-size: contain;
-			width:100%;
-			height: 100%;
-			@include scaleY(.5);
-			flex:1;
-			opacity: .2;
-		}
 		.text{
-			color:$dojo-darkblue;
-			padding: 0 $space-size*4;
+			color: $dojo-blackblue;
+			padding: 2px $space-size*4 0;
 			text-align: center;
 			font-size:16px;
-			font-weight: normal;
+			font-weight: 300;
 			text-transform: uppercase;
+			line-height: 40px;
+			letter-spacing: 3px;
+			@include background-image(linear-gradient(darken(#f6f6f6, 5%), #f6f6f6));
+			@include border-top-radius(5px);
 		}
 	}
 	.logo{
@@ -570,6 +571,7 @@ header{
 		@include display-flex;
 		@include flex-direction(row);
 	  	@include align-items(stretch);
+	  	padding: 0;
 	}
 	.card{
 		display: block;
@@ -713,6 +715,88 @@ header{
 				background-color: $dojo-primary;
 				color:white;
 			}
+		}
+	}
+}
+// Newsletter
+.newsletter{
+	position: relative;
+	background: white;
+	padding: $space-size*2 0;
+	text-align: center;
+	.container{
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(center);
+	}
+	.title{
+		margin-bottom: $space-size;
+		.text{
+			font-family: $headline-font;
+			color: $dojo-darkblue;
+			font-size: $font-size-h3;
+			font-style: italic;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+	}
+}
+// Information
+.information{
+	position: relative;
+	background: white;
+	padding: 0 0;
+}
+// Footer
+footer{
+	position: relative;
+	padding: $space-size*2 0;
+	font-size: 12px;
+	font-weight: 300;
+	.container{
+		@include display-flex;
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
+	}
+	.brand{
+		flex:1;
+		img{
+			width:40px;
+			margin-right: $space-size;
+		}
+	}
+	.social{
+		margin: 0;
+		@include display-flex;
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(flex-end);
+		.icon-social{
+			width: 34px;
+			height: 34px;
+			margin:0 2px;
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover{
+				opacity: .90;
+			}
+  			&.facebook{		
+				background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
+  			}
+  			&.twitter{
+				background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
+  			}
+  			&.linkedin{
+				background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
+  			}
+  			&.youtube{
+				background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
+  			}
 		}
 	}
 }

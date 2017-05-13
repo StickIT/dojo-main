@@ -66,7 +66,7 @@ jQuery(document).ready(function(){
 
 var lang = jQuery('html').attr('lang');
 
-jQuery(document).on('submit', 'form.newsletter', function (e) {
+jQuery(document).on('submit', 'form.nlField', function (e) {
     e.preventDefault();
     var form = jQuery(this);
     var url = form.attr('action');
