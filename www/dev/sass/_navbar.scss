@@ -191,7 +191,7 @@
 						li{
 							&.language{
 								position: absolute;
-								right:0;
+								right: $space-size*2;
 								li.active-lang{
 									padding: 0;
 								}

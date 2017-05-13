@@ -42,12 +42,12 @@
                 <!-- Menu Fix -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#accueil">Accueil <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#programme">Programme</a></li>
-                    <li><a href="#intervenants">Intervenants</a></li>
-                    <li><a href="#informations">Informations</a></li>
+                    <li><a href="#navbarMain">Accueil <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#program">Programme</a></li>
+                    <li><a href="#speakers">Intervenants</a></li>
+                    <li><a href="#information">Informations</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
-                    <li class="book-ticket"><a href="#billet"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
+                    <li class="book-ticket"><a href="#tickets"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
                     <li class="social">
                         <ul class="list-unstyled list-inline">
                             <li class="icon-social facebook"><a href="https://www.facebook.com/SmartCastNinja/" target="_blank">&nbsp;</a></li>
@@ -85,14 +85,14 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                   <ul class="nav navbar-nav">
                     <div class="col-xs-6 left">
-                        <li><a href="#accueil">Accueil <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#programme">Programme</a></li>
-                        <li><a href="#intervenants">Intervenants</a></li>
+                        <li><a href="#navbarMain">Accueil <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#program">Programme</a></li>
+                        <li><a href="#speakers">Intervenants</a></li>
                     </div>
                     <div class="col-xs-6 right">
-                        <li><a href="#informations">Informations</a></li>
+                        <li><a href="#information">Informations</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
-                        <li class="book-ticket"><a href="#billet"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
+                        <li class="book-ticket"><a href="#tickets"><i class="fa fa-ticket" aria-hidden="true"></i>Réserver</a></li>
                     </div>
                     <li class="language">
                         <ul class="list-unstyled list-inline">
@@ -106,7 +106,7 @@
           </div>
         </nav>
         <!-- Header -->
-        <header class="container-full">
+        <header id="home" class="container-full">
              <section class="firepower">
                 <video id="my-video" autoplay loop>
                     <source src="/resources/video/dojo-firepower.webm" type="video/webm">
@@ -143,7 +143,7 @@
             </section>
         </header>
         <!-- Meeting -->
-        <section class="container-full meeting">
+        <section id="meeting" class="container-full meeting">
             <section class="container">
                 <div class="col-xs-12 col-sm-4">
                     <div class="heading">
@@ -181,14 +181,14 @@
             </section>
         </section>
         <!-- Schedule -->
-        <section class="container-full schedule">            
+        <section id="schedule" class="container-full schedule">            
             <h1 class="background row">
                 <span class="topline">Réservez votre journée</span>
                 <span class="baseline">HÔTEL DE VILLE DE PARIS <span class="red">-</span> 17 JUIN 2017</span>
             </h1>   
         </section>
         <!-- Program -->
-        <section class="container-full program">   
+        <section id="program" class="container-full program">   
             <section class="container">         
                 <div class="title">
                     <span class="text">PROGRAMME</span>
@@ -330,7 +330,7 @@
             </section>
         </section>
         <!-- Speakers -->
-        <section class="container-full speakers">
+        <section id="speakers" class="container-full speakers">
             <div class="container-full">
                 <div class="title">
                     Intervenants
@@ -468,7 +468,7 @@
             </div>
         </section>
         <!-- Partners -->
-        <section class="container-full partners">
+        <section id="partners" class="container-full partners">
             <div class="container">                       
                 <div class="title">
                     <span class="text">En partenariat avec</span>
@@ -486,7 +486,7 @@
             </div>        
         </section>
         <!-- Tickets -->
-        <section class="container-full tickets">
+        <section id="tickets" class="container-full tickets">
             <div class="container">
                 <div class="col-xs-12 col-sm-4 card">
                     <div class="head">
@@ -557,7 +557,7 @@
             </div>
         </section>
         <!-- Newsletter -->
-        <section class="newsletter">
+        <section id="newsletter" class="newsletter">
             <div class="container title">
                 <span class="text">Inscrivez-vous à la newsletter</span>
             </div>
@@ -577,29 +577,33 @@
             </div>
         </section>
         <!-- Information -->
-        <section class="information">
-            <div class="block">
-                <div class="head">Informations</div>
-                <div class="inside">
-                    <ul class="liste">
-                        <li>
-                            <i class="fa fa-fw fa-map " aria-hidden="true"></i>
-                            <span class="title" >Adresse</span>
-                            Hôtel de Ville - 5 Rue de Lobau, 75004 Paris
-                        </li>
-                        <li>
-                            <i class="fa fa-fw fa-subway" aria-hidden="true"></i>
-                            <span class="title" >Accès</span>
-                            Métro - Ligne 1 et 11</br>
-                            Bus - Ligne 38, 47, 67, 69, 70, 72, 74, 76, 96</br>
-                            Voiture - Parking Indigo - 4 Rue de Lobau</br>
-                        </li>
-                        <li>
-                            <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>
-                            <span class="title" >Horaire</span>
-                            9h00 - 18h30
-                        </li>
-                    </ul>
+        <section id="information" class="information">
+            <div class="container">
+                <div class="col-xs-12">
+                    <div class="block">
+                        <div class="head">Informations</div>
+                        <div class="inside">
+                            <ul class="liste">
+                                <li>
+                                    <i class="fa fa-fw fa-map " aria-hidden="true"></i>
+                                    <span class="title" >Adresse</span>
+                                    Hôtel de Ville - 5 Rue de Lobau, 75004 Paris
+                                </li>
+                                <li>
+                                    <i class="fa fa-fw fa-subway" aria-hidden="true"></i>
+                                    <span class="title" >Accès</span>
+                                    Métro - Ligne 1 et 11</br>
+                                    Bus - Ligne 38, 47, 67, 69, 70, 72, 74, 76, 96</br>
+                                    Voiture - Parking Indigo - 4 Rue de Lobau</br>
+                                </li>
+                                <li>
+                                    <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>
+                                    <span class="title" >Horaire</span>
+                                    9h00 - 18h30
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -609,7 +613,7 @@
                 <div class="col-xs-12 col-sm-6 brand">
                     <img src="resources/logo/dojo-esport-light-icon.svg" alt="logo">
                     © 2017 Dojo Esport. Tous droits réservés. 
-                    <a href="/mentions-legales.html">Mentions légales.</a>
+                    <a href="#" data-toggle="modal" data-target="#modalmentionslegales">Mentions légales.</a>
                 </div>
                 <ul class="col-xs-12 col-sm-6 list-unstyled list-inline social">
                     <li class="icon-social facebook"><a href="https://www.facebook.com/SmartCastNinja/" target="_blank">&nbsp;</a></li>
@@ -619,7 +623,71 @@
                 </ul>
             </div>   
         </footer>
-
+        <!-- Modal-Contact -->
+        <div class="modal fade" id="modalcontact" tabindex="-1" role="dialog" aria-labelledby="ModalContact">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contacts</h4>
+                    </div>
+                    <div class="sep">&nbsp;</div>
+                    <div class="modal-body">
+                        <div class="text">
+                            <span class="info">Pour toutes demandes concernant la presse :</span>
+                            <a href="mailto:presse@dojoesport.ninja">presse@dojoesport.ninja</a>
+                        </div>
+                        <img class="line" src="resources/icons/dojo-icon-line-02.svg" alt="separation">
+                        <div class="text">
+                            <span class="info">Vous rencontrez un problème lié à l'achat de votre billet ?</span>
+                            <a href="mailto:sav@dojoesport.ninja">sav@dojoesport.ninja</a>
+                        </div>
+                        <img class="line" src="resources/icons/dojo-icon-line-02.svg" alt="separation">
+                        <div class="text">
+                            <span class="info">Signaler un problème technique lié au site internet :</span>
+                            <a href="mailto:support@dojoesport.ninja">support@dojoesport.ninja</a>
+                        </div>
+                        <img class="line" src="resources/icons/dojo-icon-line-02.svg" alt="separation">
+                        <div class="text">
+                            <span class="info">Vous souhaitez devenir partenaire du Dojo Esport ?</span>
+                            <a href="mailto:pro@dojoesport.ninja">pro@dojoesport.ninja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-Mentions_légales -->
+        <div class="modal fade" id="modalmentionslegales" tabindex="-1" role="dialog" aria-labelledby="ModalMentionsLegales">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Mentions légales</h4>
+                    </div>
+                    <div class="sep">&nbsp;</div>
+                    <div class="modal-body">
+                        <div class="text">
+                            <div class="text">
+                                <p>
+                                    L’édition du site dojoesport.ninja est assurée par la société JK GROUPE, SAS au capital de 1062,30 euros, immatriculée au RCS de Paris sous le numéro 751 713 454, dont le siège social est situé au 20 Boulevard du Montparnasse 75015 Paris.
+                                </p>
+                                <p>
+                                    Le Directeur de la publication est : PERNOT Florian
+                                </p>
+                                <p>
+                                    Numéro de téléphone : <a href="tel:+33177188267">01 77 18 82 67</a>
+                                </p>
+                                <p>
+                                    Adresse e-mail : <a href="mailto:fpernot@jktv.fr">fpernot@jktv.fr</a>
+                                </p>              
+                                <p>
+                                    L’hébergeur du site dojoesport.ninja est la société JK GROUPE, dont le siège social est situé au 20 Boulevard du Montparnasse 75015 Paris, avec le numéro de téléphone : <a href="tel:+33177188267">01 77 18 82 67</a>.
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         <script src="js/main.min.js"></script>
     </body>
 </html>

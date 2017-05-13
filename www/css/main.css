@@ -10753,7 +10753,7 @@ header .videoHeader .splitSkew svg {
 .newsletter {
   position: relative;
   background: white;
-  padding: 40px 0;
+  padding: 80px 0 120px;
   text-align: center;
 }
 /* line 727, ../dev/sass/_home.scss */
@@ -10784,17 +10784,111 @@ header .videoHeader .splitSkew svg {
 .information {
   position: relative;
   background: white;
-  padding: 0 0;
+  background-image: url(../resources/bg/information-map.png);
+  background-size: cover;
+  height: 280px;
+}
+/* line 752, ../dev/sass/_home.scss */
+.information .block {
+  position: absolute;
+  right: 0;
+  margin-top: -20px;
+  width: 440px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
+  box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
+}
+/* line 760, ../dev/sass/_home.scss */
+.information .block:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
+  box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
+}
+/* line 770, ../dev/sass/_home.scss */
+.information .block .head {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+  background: #1b2b58;
+  border-bottom: 1px solid rgba(5, 15, 33, 0.2);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
+  box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
+}
+/* line 783, ../dev/sass/_home.scss */
+.information .block .inside {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJkNDc5MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFiMmI1OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2d4793), color-stop(100%, #1b2b58));
+  background-image: -moz-linear-gradient(#2d4793, #1b2b58);
+  background-image: -webkit-linear-gradient(#2d4793, #1b2b58);
+  background-image: linear-gradient(#2d4793, #1b2b58);
+  padding: 20px 20px;
+}
+/* line 787, ../dev/sass/_home.scss */
+.information .block .inside ul.liste {
+  display: inline-block;
+  text-align: left;
+  font-weight: normal;
+  width: 85%;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+/* line 796, ../dev/sass/_home.scss */
+.information .block .inside ul.liste li {
+  list-style: none;
+  position: relative;
+  color: #fff;
+  padding-bottom: 10px;
+}
+/* line 802, ../dev/sass/_home.scss */
+.information .block .inside ul.liste li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 807, ../dev/sass/_home.scss */
+.information .block .inside ul.liste li i.fa {
+  position: absolute;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: -40px;
+}
+/* line 814, ../dev/sass/_home.scss */
+.information .block .inside ul.liste li .title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 9px;
+  opacity: .3;
+  font-weight: 300;
 }
 
-/* line 752, ../dev/sass/_home.scss */
+/* line 827, ../dev/sass/_home.scss */
 footer {
   position: relative;
   padding: 40px 0;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 757, ../dev/sass/_home.scss */
+/* line 832, ../dev/sass/_home.scss */
 footer .container {
   display: -webkit-flex;
   display: flex;
@@ -10805,16 +10899,16 @@ footer .container {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 763, ../dev/sass/_home.scss */
+/* line 838, ../dev/sass/_home.scss */
 footer .brand {
   flex: 1;
 }
-/* line 765, ../dev/sass/_home.scss */
+/* line 840, ../dev/sass/_home.scss */
 footer .brand img {
   width: 40px;
   margin-right: 20px;
 }
-/* line 770, ../dev/sass/_home.scss */
+/* line 845, ../dev/sass/_home.scss */
 footer .social {
   margin: 0;
   display: -webkit-flex;
@@ -10826,35 +10920,35 @@ footer .social {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 776, ../dev/sass/_home.scss */
+/* line 851, ../dev/sass/_home.scss */
 footer .social .icon-social {
   width: 34px;
   height: 34px;
   margin: 0 2px;
 }
-/* line 780, ../dev/sass/_home.scss */
+/* line 855, ../dev/sass/_home.scss */
 footer .social .icon-social a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 785, ../dev/sass/_home.scss */
+/* line 860, ../dev/sass/_home.scss */
 footer .social .icon-social:hover {
   opacity: .90;
 }
-/* line 788, ../dev/sass/_home.scss */
+/* line 863, ../dev/sass/_home.scss */
 footer .social .icon-social.facebook {
   background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
 }
-/* line 791, ../dev/sass/_home.scss */
+/* line 866, ../dev/sass/_home.scss */
 footer .social .icon-social.twitter {
   background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
 }
-/* line 794, ../dev/sass/_home.scss */
+/* line 869, ../dev/sass/_home.scss */
 footer .social .icon-social.linkedin {
   background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
 }
-/* line 797, ../dev/sass/_home.scss */
+/* line 872, ../dev/sass/_home.scss */
 footer .social .icon-social.youtube {
   background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
 }
@@ -11105,7 +11199,7 @@ footer .social .icon-social.youtube {
 /* line 192, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav li.language {
   position: absolute;
-  right: 0;
+  right: 40px;
 }
 /* line 195, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav li.language li.active-lang {
