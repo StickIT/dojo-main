@@ -147,47 +147,32 @@ header{
 		.content{
 			position: relative;
 			color:$dojo-blackblue;
-			border: 1px solid rgba($dojo-blackblue, .1);
-			padding: $space-size*1.5 $space-size;			
+			border: 3px double rgba($dojo-blackblue, .1);		
 			flex:1;
-			@include display-flex;
-			@include flex-direction(column);
-			@include align-items(center);
-			@include justify-content(center);
 			.title{
-			 	@include align-self(center);
-			 	@include display-flex;
-			 	@include align-items(center);
-				position: absolute;
-				top: -13px;
-				width: auto;
-				text-align: center;
 				line-height: 26px;
 				background: white;
-				padding: 0 $space-size;
 				font-size: $font-size-base+2;
 				text-transform: uppercase;
+				text-align: center;
+				margin: 0 $space-size;	
+				margin-top: -13px;
 			}
 			.description{
-				@include align-self(flex-start);
-			 	@include display-flex;
-			 	@include align-items(center);
 				line-height: 24px;
 				font-size: ($font-size-base)-1;
 				font-weight: 300;
+				padding: $space-size*1.5 $space-size;	
 			}
 			.icon{
-			 	@include align-self(center);
-			 	@include display-flex;
-			 	@include align-items(center);
 				position: absolute;
 				bottom: -20px;
-				width: 40px;
+				width: 100%;
 				height: 40px;
 				text-align: center;
-				background: white;
 				img{
-					width: 100%;
+					width: 40px;
+					background: white;
 				}
 			}
 		}
