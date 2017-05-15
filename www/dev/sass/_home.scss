@@ -352,6 +352,20 @@ header{
 				font-size: $font-size-base;
 				font-weight: regular;
 				text-shadow: 0px 1px 1px rgba(0,0,0, 0.75);
+				img{
+					display: inline-block;
+				    height: 12px;
+				    width: auto;
+				    margin-top: -2px;
+				    margin-left: 4px;
+				    @include box-shadow(0 0 0 1px white inset);
+				}
+				.association{
+					font-size: $font-size-small;
+					width: 100%;
+					font-weight: lighter;
+					display: inline-block;
+				}
 				&:last-child{
 					@include border-bottom-radius(5px);
 				}
