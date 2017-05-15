@@ -13,118 +13,54 @@
 			z-index:10;
 			display:none;
 		}
+		@include btn-dojo-primary(100%,  14px);
 	}
-	@include btn-dojo-primary(300px !important,  14px !important);
-
-	.partTop{	
-		@include display-flex;
-		@include flex-direction(column);
-		@include align-items(center);
-		@include justify-content(center);
-		.content{	
-			@include display-flex;
-			@include flex-direction(column);
-			@include align-items(center);
-			@include justify-content(center);
-		  	.logo{
-		  		width:35%;
-		  		margin:0 auto;
-		  		margin-bottom: 30px;
-		  	}
-		  	.baseline{
-		  		top:0 !important;
-		  	}
+	header{
+		.logo{
+			width:200px;
 		}
 	}
-	.partTop{
-		position: relative;
-		width: 100%;
-		height: 500px !important;
-		top: 0;
-		left: 0;
-		.imageBG{
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 600px !important;
-			// @include background(image-url("../resources/bg/dojo-bg-lcs.jpg"));
-			// background-position: top center;
-			#videoLoop{
-				video{
-					height: 600px !important;
-					width: auto !important;
-				}
-			}
-			.embed-responsive{
-				overflow: visible !important;
-			}
-			.overlay{
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 600px !important;
-				background: rgba($dojo-darkblue, .9);
-			}
+	.meeting{
+		.container{		
+			display: block;
+		}
+		[class*=' col-']{		
+			display: block;
 		}
 	}
-
-	.module:nth-child(2){
-		margin:40px 0;
-	}
-
-	.billet{
-		height: auto !important;
+	.tickets{
+		display: block;
 		.container{
-			display:block !important;
+			display: block;
 			.card{
-				margin:20px 0 !important;
+				display: block;
+				margin-top: $space-size;
+				margin-bottom: $space-size;
 				&:first-child{
 					@include scale(1);
 				}
 			}
 		}
 	}
-
-	.newsletter{
+	.program{
 		.title{
+			&:before, &:after{
+				display: none;
+			}
 			.text{
-				letter-spacing: 0 !important;
-			}
-		}
-		.action{
-			img{
-				display:none !important;
-			}
-		}
-	}
-	
-	.informations{
-		.block{
-			position: relative !important;
-			width: 100% !important;
-			margin-right: 0 !important;
-			margin-top: 0 !important;
-		}
-	}
-
-	.sponsor{
-		.title{
-			img{
-				display:none !important;
-			}
-		}
-		.block{
-			@include flex-direction(column !important);
-			a{
-				padding: 0 !important;
-				margin: 20px 0 !important;
+				width: 100%;
+				display: block;
+				padding:0;
+				text-align: center;
 			}
 		}
 	}
-	#videoLoop{
-		overflow:hidden;
+	.partners{
+		.logo{
+			.container{
+				display: block;
+			}
+		}
 	}
 }
 
@@ -144,7 +80,6 @@
 			display:none;
 		}
 	}
-	
 }
 
 // Tablet portrait
@@ -163,11 +98,10 @@
 			display:none;
 		}
 	}
-	
 }
 
 // Tablet landscape
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (orientation : landscape) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation : landscape) {
 	body{		
 		&:before{
 			content: "TABLET LANDSCAPE";
@@ -200,34 +134,6 @@
 			display:none;
 		}
 	}
-
-	@include btn-dojo-primary(320px !important, 10px !important);
-	.partBaseline{
-	  	.content{
-	  		.logo{
-	  			width: 140px !important;
-	  			margin-bottom:12px !important;
-	  		}
-			// .baseline{
-			// 	font-size: 26px !important;
-			// 	line-height:14px !important;
-			// 	.subBaseline{
-			// 		font-size:9px !important;
-			// 	}	
-			// }
-	  	}
-	}
-
-	.billet{
-		.container{
-			.card{
-				&:first-child{
-					@include scale(1.07);
-				}
-			}
-		}
-	}
-	
 }
 // FHD Desktop
 @media (min-width: $screen-fhd-min) and (max-width: $screen-fhd-max){
@@ -243,15 +149,6 @@
 			color:black;
 			z-index:10;
 			display:none;
-		}
-	}
-	.billet{
-		.container{
-			.card{
-				&:first-child{
-					@include scale(1.07);
-				}
-			}
 		}
 	}
 }
