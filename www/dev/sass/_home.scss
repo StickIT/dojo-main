@@ -21,6 +21,12 @@ a{
 .red{
 	color:$dojo-primary;
 }
+// Wrapper
+.wrapper{	
+	position: relative;
+	background: white;
+	padding: $space-size*2 0;
+}
 // Header
 header{
 	height: 600px;
@@ -403,6 +409,7 @@ header{
 		@include display-flex;
 		@include flex-direction(row);
 	  	@include align-items(center);
+		@include box-shadow(0 -2px 0 0 white inset, 0 2px 0 0 white inset);
 	  	&:before{
 	  		content:"";
 	  		position: absolute;
@@ -525,6 +532,7 @@ header{
 	@include flex-direction(column);
   	@include align-items(center);
   	@include justify-content(center);
+	@include box-shadow(0 -2px 0 0 white inset, 0 2px 0 0 #f6f6f6 inset);
   	&:before{
   		content:"";
   		position: absolute;
@@ -564,8 +572,8 @@ header{
 		@include display-flex;
 		@include flex-direction(column);
 	  	@include align-items(stretch);
-		// padding:0;
-		// margin: 0 $space-size*2;
+		padding:0;
+		margin: 0 $space-size*2;
 		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 		&:first-child{
 			@include scale(1.07);

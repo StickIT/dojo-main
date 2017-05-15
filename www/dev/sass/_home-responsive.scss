@@ -15,10 +15,40 @@
 		}
 		@include btn-dojo-primary(100%,  14px);
 	}
-	header{
-		.logo{
-			width:200px;
+	#navbarTop{
+		z-index:101;
+		.container{
+			@include display-flex;
+			@include flex-direction(column);
+		  	@include align-items(center);
+		  	@include justify-content(space-around);
 		}
+		.navbar-nav{
+			@include display-flex;
+			@include flex-direction(column);
+		  	@include align-items(center);
+		  	@include justify-content(space-around);
+		  	.social, .language{
+		  		margin-bottom: $space-size;
+		  	}
+		}
+	}
+	header{
+		height: 500px;
+		.content{
+			.baseline{
+				font-size: 30px !important;
+				padding-bottom: $space-size*3;
+				a{
+					.logo{
+						width:150px;
+						margin: 0 auto;
+						margin-bottom: $space-size*2;						
+						text-align: center;
+					}
+				}
+			}
+		}		
 	}
 	.meeting{
 		.container{		
@@ -26,16 +56,27 @@
 		}
 		[class*=' col-']{		
 			display: block;
+			&:first-child{
+				margin-top: -80px;
+				.heading{
+					margin-top: 0;
+				}				
+			}
+			.heading{
+				margin-top: 40px;
+			}
 		}
 	}
 	.tickets{
 		display: block;
 		.container{
 			display: block;
+			padding: $space-size/2 $space-size;
 			.card{
 				display: block;
-				margin-top: $space-size;
-				margin-bottom: $space-size;
+				margin: 0;
+				margin-top: $space-size/2;
+				margin-bottom: $space-size/2;
 				&:first-child{
 					@include scale(1);
 				}
@@ -56,9 +97,43 @@
 		}
 	}
 	.partners{
+		.title{
+			.text{
+				padding: 0 $space-size;
+				font-size: 14x;
+			}
+		}
 		.logo{
-			.container{
-				display: block;
+			.container{				
+				@include flex-direction(column);
+				a{
+					margin: $space-size/2 0 !important;
+				}
+				img{
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.information{
+		.block{
+			width: auto;
+		}
+	}
+	footer{
+		.container{
+			@include flex-direction(column);
+			.brand{
+				@include display-flex();
+				@include flex-direction(column);
+				@include align-items(center);
+				margin-bottom: $space-size;
+				img{
+					margin-bottom: $space-size;
+				}
+			}
+			.social{
+				@include justify-content(center);
 			}
 		}
 	}
