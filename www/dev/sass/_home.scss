@@ -552,8 +552,9 @@ header{
 		background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
 		@include rotate(180deg);
   	}
-  	.infos{
-  		background: $dojo-lightblue;
+  	.infos{  		
+		background-image: radial-gradient(80% 100%, darken($dojo-blue, 20%) 50%, darken($dojo-blue, 25%) 100%);
+  		@include box-shadow(0 0 2px 0 rgba($dojo-blue, 1) inset);
   		text-align: center;
   		font-size: 10px;
   		color: white;
@@ -587,10 +588,11 @@ header{
 				}
 			}
 			a.acheter{
-				background-color: $dojo-blue;
-				&:hover{
-					background: $gray-lighter;
-					color:$dojo-blackblue;
+				@include background-image(linear-gradient(darken($dojo-primary, 5%), darken($dojo-primary, 15%)));				
+				@include box-shadow(0 -1px 0 0 rgba($dojo-primary, .5) inset, 0 1px 0 0 rgba(black, .45) inset);
+				&:hover{					
+					@include background-image(linear-gradient(darken($dojo-primary, 10%), darken($dojo-primary, 0%)));
+					color:white;
 				}
 			}
 		}
@@ -694,7 +696,8 @@ header{
 			}
 		}
 		a.acheter{
-			background-color: $dojo-blackblue;
+			@include background-image(linear-gradient(darken($dojo-blue, 5%), darken($dojo-blue, 15%)));				
+			@include box-shadow(0 -1px 0 0 rgba($dojo-blue, .5) inset, 0 1px 0 0 rgba(black, .45) inset);
 			display: block;
 			width: 100%;
 			padding: $space-size 0;
@@ -703,9 +706,9 @@ header{
 			bottom:0;
 			text-align: center;
 			@include border-bottom-radius(8px);
-
+			@include transition(background .6s ease);
 			&:hover{
-				background-color: $dojo-primary;
+				@include background-image(linear-gradient(darken($dojo-blue, 10%), darken($dojo-blue, 0%)));	
 				color:white;
 			}
 		}
@@ -729,9 +732,42 @@ header{
 			color: $dojo-darkblue;
 			font-size: $font-size-h3;
 			font-style: italic;
-			font-weight: bold;
+			font-weight: normal;
 			text-transform: uppercase;
-			letter-spacing: 3px;
+			letter-spacing: 10px;
+			margin-bottom: $space-size;
+		}
+	}
+	.buttonNL{	
+		@include display-flex;
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
+		width: 100%;	
+		height: 40px;
+		&:before{
+			content:"";
+			position: relative;
+			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+			background-size: contain;
+			width:100%;
+			height: 100%;
+			@include transform(rotate(180deg) scaleY(.5));
+			flex:1;
+			opacity: .2;
+			margin-right:$space-size;
+		}
+		&:after{
+			content:"";
+			position: relative;
+			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+			background-size: contain;
+			width:100%;
+			height: 100%;
+			@include scaleY(.5);
+			flex:1;
+			opacity: .2;
+			margin-left:$space-size;
 		}
 	}
 }

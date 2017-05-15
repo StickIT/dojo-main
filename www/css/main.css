@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 55, ../dev/sass/_variables.scss */
+/* line 59, ../dev/sass/_variables.scss */
 .redtag {
   color: #D81313;
 }
@@ -10527,14 +10527,16 @@ header .videoHeader .splitSkew svg {
 }
 /* line 555, ../dev/sass/_home.scss */
 .tickets .infos {
-  background: #27355E;
+  background-image: radial-gradient(80% 100%, #152145 50%, #0f1831 100%);
+  -webkit-box-shadow: 0 0 2px 0 #2d4793 inset;
+  box-shadow: 0 0 2px 0 #2d4793 inset;
   text-align: center;
   font-size: 10px;
   color: white;
   padding-top: 8px;
   padding-bottom: 6px;
 }
-/* line 563, ../dev/sass/_home.scss */
+/* line 564, ../dev/sass/_home.scss */
 .tickets .container {
   display: -webkit-flex;
   display: flex;
@@ -10544,7 +10546,7 @@ header .videoHeader .splitSkew svg {
   align-items: stretch;
   padding: 0;
 }
-/* line 569, ../dev/sass/_home.scss */
+/* line 570, ../dev/sass/_home.scss */
 .tickets .card {
   display: block;
   -moz-border-radius: 8px;
@@ -10560,14 +10562,14 @@ header .videoHeader .splitSkew svg {
   margin: 0 40px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 }
-/* line 578, ../dev/sass/_home.scss */
+/* line 579, ../dev/sass/_home.scss */
 .tickets .card:first-child {
   -webkit-transform: scale(1.07);
   -ms-transform: scale(1.07);
   -o-transform: scale(1.07);
   transform: scale(1.07);
 }
-/* line 580, ../dev/sass/_home.scss */
+/* line 581, ../dev/sass/_home.scss */
 .tickets .card:first-child .head {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkyMGQwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4MTMxMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -10578,20 +10580,32 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 1px 0 0 rgba(216, 19, 19, 0.5) inset;
   box-shadow: 0 1px 0 0 rgba(216, 19, 19, 0.5) inset;
 }
-/* line 585, ../dev/sass/_home.scss */
+/* line 586, ../dev/sass/_home.scss */
 .tickets .card:first-child .stock .type {
   background-color: #D81313 !important;
 }
-/* line 589, ../dev/sass/_home.scss */
+/* line 590, ../dev/sass/_home.scss */
 .tickets .card:first-child a.acheter {
-  background-color: #2D4793;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2MxMTExMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkyMGQwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c11111), color-stop(100%, #920d0d));
+  background-image: -moz-linear-gradient(#c11111, #920d0d);
+  background-image: -webkit-linear-gradient(#c11111, #920d0d);
+  background-image: linear-gradient(#c11111, #920d0d);
+  -webkit-box-shadow: 0 -1px 0 0 rgba(216, 19, 19, 0.5) inset, 0 1px 0 0 rgba(0, 0, 0, 0.45) inset;
+  box-shadow: 0 -1px 0 0 rgba(216, 19, 19, 0.5) inset, 0 1px 0 0 rgba(0, 0, 0, 0.45) inset;
 }
-/* line 591, ../dev/sass/_home.scss */
+/* line 593, ../dev/sass/_home.scss */
 .tickets .card:first-child a.acheter:hover {
-  background: #eeeeee;
-  color: #010712;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E5MGYwZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4MTMxMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a90f0f), color-stop(100%, #d81313));
+  background-image: -moz-linear-gradient(#a90f0f, #d81313);
+  background-image: -webkit-linear-gradient(#a90f0f, #d81313);
+  background-image: linear-gradient(#a90f0f, #d81313);
+  color: white;
 }
-/* line 597, ../dev/sass/_home.scss */
+/* line 599, ../dev/sass/_home.scss */
 .tickets .card .head {
   background-color: #2D4793;
   display: inline-block;
@@ -10612,32 +10626,32 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 1px 0 0 rgba(45, 71, 147, 0.5) inset;
   box-shadow: 0 1px 0 0 rgba(45, 71, 147, 0.5) inset;
 }
-/* line 609, ../dev/sass/_home.scss */
+/* line 611, ../dev/sass/_home.scss */
 .tickets .card .head img {
   width: 60px;
   margin-bottom: 10px;
   opacity: .3;
 }
-/* line 614, ../dev/sass/_home.scss */
+/* line 616, ../dev/sass/_home.scss */
 .tickets .card .head .nom {
   display: inline-block;
   width: 100%;
   font-weight: normal;
 }
-/* line 619, ../dev/sass/_home.scss */
+/* line 621, ../dev/sass/_home.scss */
 .tickets .card .head .prix {
   display: inline-block;
   width: 100%;
   font-weight: 300;
 }
-/* line 625, ../dev/sass/_home.scss */
+/* line 627, ../dev/sass/_home.scss */
 .tickets .card .inside {
   flex: 1;
   justify-content: center;
   text-align: center;
   background: white;
 }
-/* line 630, ../dev/sass/_home.scss */
+/* line 632, ../dev/sass/_home.scss */
 .tickets .card .inside .stock {
   position: relative;
   margin: 0 auto;
@@ -10649,7 +10663,7 @@ header .videoHeader .splitSkew svg {
   font-size: 12px;
   margin-bottom: 30px;
 }
-/* line 640, ../dev/sass/_home.scss */
+/* line 642, ../dev/sass/_home.scss */
 .tickets .card .inside .stock .shadow {
   position: absolute;
   bottom: 1px;
@@ -10665,7 +10679,7 @@ header .videoHeader .splitSkew svg {
   box-shadow: rgba(0, 0, 0, 0.6) 0 0px 10px 3px;
   z-index: 0;
 }
-/* line 652, ../dev/sass/_home.scss */
+/* line 654, ../dev/sass/_home.scss */
 .tickets .card .inside .stock .type {
   background-color: #2D4793;
   font-weight: lighter;
@@ -10679,7 +10693,7 @@ header .videoHeader .splitSkew svg {
   border-bottom-left-radius: 4px;
   margin-top: -1px;
 }
-/* line 665, ../dev/sass/_home.scss */
+/* line 667, ../dev/sass/_home.scss */
 .tickets .card .inside .citation {
   margin: 0 auto;
   font-weight: normal;
@@ -10689,7 +10703,7 @@ header .videoHeader .splitSkew svg {
   margin-bottom: 30px;
   width: 90%;
 }
-/* line 674, ../dev/sass/_home.scss */
+/* line 676, ../dev/sass/_home.scss */
 .tickets .card .inside ul.liste {
   margin: 0 auto;
   padding-bottom: 30px;
@@ -10697,14 +10711,14 @@ header .videoHeader .splitSkew svg {
   font-weight: normal;
   width: 85%;
 }
-/* line 680, ../dev/sass/_home.scss */
+/* line 682, ../dev/sass/_home.scss */
 .tickets .card .inside ul.liste li {
   list-style: none;
   position: relative;
   color: #050F21;
   padding-bottom: 10px;
 }
-/* line 685, ../dev/sass/_home.scss */
+/* line 687, ../dev/sass/_home.scss */
 .tickets .card .inside ul.liste li img {
   position: absolute;
   width: 20px;
@@ -10713,9 +10727,16 @@ header .videoHeader .splitSkew svg {
   margin-top: -2px;
   margin-left: -24px;
 }
-/* line 696, ../dev/sass/_home.scss */
+/* line 698, ../dev/sass/_home.scss */
 .tickets .card a.acheter {
-  background-color: #010712;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI3M2U3ZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFiMmI1OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #273e7f), color-stop(100%, #1b2b58));
+  background-image: -moz-linear-gradient(#273e7f, #1b2b58);
+  background-image: -webkit-linear-gradient(#273e7f, #1b2b58);
+  background-image: linear-gradient(#273e7f, #1b2b58);
+  -webkit-box-shadow: 0 -1px 0 0 rgba(45, 71, 147, 0.5) inset, 0 1px 0 0 rgba(0, 0, 0, 0.45) inset;
+  box-shadow: 0 -1px 0 0 rgba(45, 71, 147, 0.5) inset, 0 1px 0 0 rgba(0, 0, 0, 0.45) inset;
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -10725,21 +10746,29 @@ header .videoHeader .splitSkew svg {
   text-align: center;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+  -webkit-transition: background 0.6s ease;
+  -o-transition: background 0.6s ease;
+  transition: background 0.6s ease;
 }
-/* line 707, ../dev/sass/_home.scss */
+/* line 710, ../dev/sass/_home.scss */
 .tickets .card a.acheter:hover {
-  background-color: #D81313;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIxMzQ2YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJkNDc5MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #21346c), color-stop(100%, #2d4793));
+  background-image: -moz-linear-gradient(#21346c, #2d4793);
+  background-image: -webkit-linear-gradient(#21346c, #2d4793);
+  background-image: linear-gradient(#21346c, #2d4793);
   color: white;
 }
 
-/* line 715, ../dev/sass/_home.scss */
+/* line 718, ../dev/sass/_home.scss */
 .newsletter {
   position: relative;
   background: white;
   padding: 80px 0 120px;
   text-align: center;
 }
-/* line 720, ../dev/sass/_home.scss */
+/* line 723, ../dev/sass/_home.scss */
 .newsletter .container {
   display: -webkit-flex;
   display: flex;
@@ -10748,22 +10777,68 @@ header .videoHeader .splitSkew svg {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 725, ../dev/sass/_home.scss */
+/* line 728, ../dev/sass/_home.scss */
 .newsletter .title {
   margin-bottom: 20px;
 }
-/* line 727, ../dev/sass/_home.scss */
+/* line 730, ../dev/sass/_home.scss */
 .newsletter .title .text {
   font-family: "jaf-facitweb";
   color: #050F21;
   font-size: 24px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+/* line 741, ../dev/sass/_home.scss */
+.newsletter .buttonNL {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+/* line 748, ../dev/sass/_home.scss */
+.newsletter .buttonNL:before {
+  content: "";
+  position: relative;
+  background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -moz-transform: rotate(180deg) scaleY(0.5);
+  -ms-transform: rotate(180deg) scaleY(0.5);
+  -webkit-transform: rotate(180deg) scaleY(0.5);
+  transform: rotate(180deg) scaleY(0.5);
+  flex: 1;
+  opacity: .2;
+  margin-right: 20px;
+}
+/* line 760, ../dev/sass/_home.scss */
+.newsletter .buttonNL:after {
+  content: "";
+  position: relative;
+  background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  flex: 1;
+  opacity: .2;
+  margin-left: 20px;
 }
 
-/* line 739, ../dev/sass/_home.scss */
+/* line 775, ../dev/sass/_home.scss */
 .information {
   position: relative;
   background: white;
@@ -10771,7 +10846,7 @@ header .videoHeader .splitSkew svg {
   background-size: cover;
   height: 280px;
 }
-/* line 745, ../dev/sass/_home.scss */
+/* line 781, ../dev/sass/_home.scss */
 .information .block {
   position: absolute;
   right: 0;
@@ -10784,7 +10859,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
   box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
 }
-/* line 753, ../dev/sass/_home.scss */
+/* line 789, ../dev/sass/_home.scss */
 .information .block:after {
   content: "";
   position: absolute;
@@ -10798,7 +10873,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
   box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
 }
-/* line 763, ../dev/sass/_home.scss */
+/* line 799, ../dev/sass/_home.scss */
 .information .block .head {
   width: 100%;
   color: #fff;
@@ -10814,7 +10889,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
   box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
 }
-/* line 776, ../dev/sass/_home.scss */
+/* line 812, ../dev/sass/_home.scss */
 .information .block .inside {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -10826,7 +10901,7 @@ header .videoHeader .splitSkew svg {
   background-image: linear-gradient(#2d4793, #1b2b58);
   padding: 20px 20px;
 }
-/* line 780, ../dev/sass/_home.scss */
+/* line 816, ../dev/sass/_home.scss */
 .information .block .inside ul.liste {
   display: inline-block;
   text-align: left;
@@ -10836,26 +10911,26 @@ header .videoHeader .splitSkew svg {
   font-size: 12px;
   margin-bottom: 0;
 }
-/* line 789, ../dev/sass/_home.scss */
+/* line 825, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li {
   list-style: none;
   position: relative;
   color: #fff;
   padding-bottom: 10px;
 }
-/* line 795, ../dev/sass/_home.scss */
+/* line 831, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 800, ../dev/sass/_home.scss */
+/* line 836, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li i.fa {
   position: absolute;
   font-size: 16px;
   display: inline-block;
   margin-left: -40px;
 }
-/* line 807, ../dev/sass/_home.scss */
+/* line 843, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li .title {
   display: block;
   text-transform: uppercase;
@@ -10864,14 +10939,14 @@ header .videoHeader .splitSkew svg {
   font-weight: 300;
 }
 
-/* line 820, ../dev/sass/_home.scss */
+/* line 856, ../dev/sass/_home.scss */
 footer {
   position: relative;
   padding: 40px 0;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 825, ../dev/sass/_home.scss */
+/* line 861, ../dev/sass/_home.scss */
 footer .container {
   display: -webkit-flex;
   display: flex;
@@ -10882,16 +10957,16 @@ footer .container {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 831, ../dev/sass/_home.scss */
+/* line 867, ../dev/sass/_home.scss */
 footer .brand {
   flex: 1;
 }
-/* line 833, ../dev/sass/_home.scss */
+/* line 869, ../dev/sass/_home.scss */
 footer .brand img {
   width: 40px;
   margin-right: 20px;
 }
-/* line 838, ../dev/sass/_home.scss */
+/* line 874, ../dev/sass/_home.scss */
 footer .social {
   margin: 0;
   display: -webkit-flex;
@@ -10903,35 +10978,35 @@ footer .social {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 844, ../dev/sass/_home.scss */
+/* line 880, ../dev/sass/_home.scss */
 footer .social .icon-social {
   width: 34px;
   height: 34px;
   margin: 0 2px;
 }
-/* line 848, ../dev/sass/_home.scss */
+/* line 884, ../dev/sass/_home.scss */
 footer .social .icon-social a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 853, ../dev/sass/_home.scss */
+/* line 889, ../dev/sass/_home.scss */
 footer .social .icon-social:hover {
   opacity: .90;
 }
-/* line 856, ../dev/sass/_home.scss */
+/* line 892, ../dev/sass/_home.scss */
 footer .social .icon-social.facebook {
   background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
 }
-/* line 859, ../dev/sass/_home.scss */
+/* line 895, ../dev/sass/_home.scss */
 footer .social .icon-social.twitter {
   background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
 }
-/* line 862, ../dev/sass/_home.scss */
+/* line 898, ../dev/sass/_home.scss */
 footer .social .icon-social.linkedin {
   background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
 }
-/* line 865, ../dev/sass/_home.scss */
+/* line 901, ../dev/sass/_home.scss */
 footer .social .icon-social.youtube {
   background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
 }
