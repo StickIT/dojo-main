@@ -1,7 +1,7 @@
 .modal{
-	&#modalcontact,&#modalmentionslegales{
+	&#modalcontact,&#modalmentionslegales,&.modal-intervenants{
 		.modal-dialog{
-			margin-top: 90px;
+			margin: 90px auto;
 			.modal-content{
 				.modal-header{
 					background-image: radial-gradient(50% 137%, #2D4793 0%, #233877 100%);
@@ -72,7 +72,27 @@
 	}
 	&#modalmentionslegales{
 		.modal-dialog{
-			margin-top: 30px;
+		}
+	}
+	&.modal-intervenants{
+		.modal-dialog{
+			width: 400px;
+			.modal-content{
+				.photo{
+					img{
+						display: block;
+						width: 100%;
+						height: auto;
+					}
+				}
+				.modal-body{
+					.text{
+						p{
+							text-align: justify;
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -9521,11 +9521,11 @@ body.swal2-iosfix {
   font-style: normal;
 }
 /* line 3, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog, .modal#modalmentionslegales .modal-dialog {
-  margin-top: 90px;
+.modal#modalcontact .modal-dialog, .modal#modalmentionslegales .modal-dialog, .modal.modal-intervenants .modal-dialog {
+  margin: 90px auto;
 }
 /* line 6, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header {
+.modal#modalcontact .modal-dialog .modal-content .modal-header, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header, .modal.modal-intervenants .modal-dialog .modal-content .modal-header {
   background-image: radial-gradient(50% 137%, #2d4793 0%, #233877 100%);
   display: block;
   text-align: center;
@@ -9534,7 +9534,7 @@ body.swal2-iosfix {
   border-top-left-radius: 4px;
 }
 /* line 12, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header .modal-title, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header .modal-title {
+.modal#modalcontact .modal-dialog .modal-content .modal-header .modal-title, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header .modal-title, .modal.modal-intervenants .modal-dialog .modal-content .modal-header .modal-title {
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -9543,17 +9543,17 @@ body.swal2-iosfix {
   font-size: 16px;
 }
 /* line 20, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header button, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button {
+.modal#modalcontact .modal-dialog .modal-content .modal-header button, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button {
   color: #fff;
   opacity: 1;
   margin-top: 2px;
 }
 /* line 24, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header button:hover, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button:hover {
+.modal#modalcontact .modal-dialog .modal-content .modal-header button:hover, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button:hover, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button:hover {
   opacity: .5;
 }
 /* line 29, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .sep, .modal#modalmentionslegales .modal-dialog .modal-content .sep {
+.modal#modalcontact .modal-dialog .modal-content .sep, .modal#modalmentionslegales .modal-dialog .modal-content .sep, .modal.modal-intervenants .modal-dialog .modal-content .sep {
   background-image: radial-gradient(50% 458%, #d81313 0%, #b01515 100%);
   display: block;
   width: 100%;
@@ -9561,50 +9561,60 @@ body.swal2-iosfix {
   margin-top: -1px;
 }
 /* line 36, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body {
+.modal#modalcontact .modal-dialog .modal-content .modal-body, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body, .modal.modal-intervenants .modal-dialog .modal-content .modal-body {
   text-align: center;
   padding: 30px;
 }
 /* line 39, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text {
   color: #050F21;
   display: inline-block;
 }
 /* line 42, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text .info, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text .info {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text .info, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text .info, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text .info {
   display: inline-block;
   width: 100%;
 }
 /* line 46, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text a {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text a {
   display: inline-block;
   width: 100%;
   color: #2D4793;
 }
 /* line 51, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p {
   margin-bottom: 20px;
   text-align: left;
 }
 /* line 54, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p a {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p a {
   display: inline;
 }
 /* line 57, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p:last-child, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p:last-child {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p:last-child, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p:last-child, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p:last-child {
   margin-bottom: 0;
 }
 /* line 62, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body img.line, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body img.line {
+.modal#modalcontact .modal-dialog .modal-content .modal-body img.line, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body img.line, .modal.modal-intervenants .modal-dialog .modal-content .modal-body img.line {
   width: 50%;
   opacity: .25;
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 74, ../dev/sass/_modal.scss */
-.modal#modalmentionslegales .modal-dialog {
-  margin-top: 30px;
+/* line 78, ../dev/sass/_modal.scss */
+.modal.modal-intervenants .modal-dialog {
+  width: 400px;
+}
+/* line 82, ../dev/sass/_modal.scss */
+.modal.modal-intervenants .modal-dialog .modal-content .photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 90, ../dev/sass/_modal.scss */
+.modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p {
+  text-align: justify;
 }
 
 /* line 5, ../dev/sass/_billet.scss */
@@ -10278,8 +10288,8 @@ header .videoHeader .splitSkew svg {
   width: auto;
   margin-top: -2px;
   margin-left: 4px;
-  -webkit-box-shadow: 0 0 0 1px white inset;
-  box-shadow: 0 0 0 1px white inset;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 /* line 363, ../dev/sass/_home.scss */
 .program .planning .event-block .detail .association {
@@ -10959,7 +10969,7 @@ header .videoHeader .splitSkew svg {
 /* line 870, ../dev/sass/_home.scss */
 footer {
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 12px;
   font-weight: 300;
 }
@@ -11054,8 +11064,12 @@ footer .social .icon-social.youtube {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
+/* line 19, ../dev/sass/_navbar.scss */
+#navbarTop .background .container .navbar-collapse ul.navbar-nav li.language {
+  margin-top: -2px;
+}
 
-/* line 16, ../dev/sass/_navbar.scss */
+/* line 27, ../dev/sass/_navbar.scss */
 .navbar {
   z-index: 100;
   position: fixed;
@@ -11075,11 +11089,11 @@ footer .social .icon-social.youtube {
   -o-transition: transform 0.3s linear, opacity 0.3s linear;
   transition: transform 0.3s linear, opacity 0.3s linear;
 }
-/* line 29, ../dev/sass/_navbar.scss */
+/* line 40, ../dev/sass/_navbar.scss */
 .navbar .icon-bar {
   background: white !important;
 }
-/* line 32, ../dev/sass/_navbar.scss */
+/* line 43, ../dev/sass/_navbar.scss */
 .navbar.nav-down {
   -moz-transform: translateY(-100px);
   -ms-transform: translateY(-100px);
@@ -11087,7 +11101,7 @@ footer .social .icon-social.youtube {
   transform: translateY(-100px);
   opacity: 0;
 }
-/* line 36, ../dev/sass/_navbar.scss */
+/* line 47, ../dev/sass/_navbar.scss */
 .navbar.nav-up {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -11095,36 +11109,36 @@ footer .social .icon-social.youtube {
   transform: translateY(0);
   opacity: 1;
 }
-/* line 40, ../dev/sass/_navbar.scss */
+/* line 51, ../dev/sass/_navbar.scss */
 .navbar .background {
   background: url(../resources/bg/dojo-pattern-01b.svg) repeat 200px;
   background-size: 200px;
 }
-/* line 44, ../dev/sass/_navbar.scss */
+/* line 55, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-header {
   flex: 1;
 }
-/* line 46, ../dev/sass/_navbar.scss */
+/* line 57, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-header a.navbar-brand {
   padding: 10px 15px;
 }
-/* line 48, ../dev/sass/_navbar.scss */
+/* line 59, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-header a.navbar-brand img {
   width: 40px;
   height: auto;
   display: block;
   margin: auto;
 }
-/* line 59, ../dev/sass/_navbar.scss */
+/* line 70, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li > a {
   padding-bottom: 20px;
   padding-top: 22px;
 }
-/* line 63, ../dev/sass/_navbar.scss */
+/* line 74, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket {
   padding: 14px 10px;
 }
-/* line 65, ../dev/sass/_navbar.scss */
+/* line 76, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a {
   display: block;
   padding: 7px 10px 5px 10px;
@@ -11133,79 +11147,79 @@ footer .social .icon-social.youtube {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 71, ../dev/sass/_navbar.scss */
+/* line 82, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:focus {
   background: white;
   color: #D81313;
 }
-/* line 75, ../dev/sass/_navbar.scss */
+/* line 86, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a i.fa {
   margin-right: 4px;
 }
-/* line 80, ../dev/sass/_navbar.scss */
+/* line 91, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social {
   padding: 12px 30px 10px 30px;
 }
-/* line 82, ../dev/sass/_navbar.scss */
+/* line 93, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul {
   margin: 0;
 }
-/* line 84, ../dev/sass/_navbar.scss */
+/* line 95, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social {
   width: 34px;
   height: 34px;
   margin: 0 2px;
 }
-/* line 89, ../dev/sass/_navbar.scss */
+/* line 100, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 94, ../dev/sass/_navbar.scss */
+/* line 105, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social:hover {
   opacity: .90;
 }
-/* line 97, ../dev/sass/_navbar.scss */
+/* line 108, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.facebook {
   background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
 }
-/* line 100, ../dev/sass/_navbar.scss */
+/* line 111, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.twitter {
   background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
 }
-/* line 103, ../dev/sass/_navbar.scss */
+/* line 114, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.linkedin {
   background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
 }
-/* line 106, ../dev/sass/_navbar.scss */
+/* line 117, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.youtube {
   background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
 }
-/* line 112, ../dev/sass/_navbar.scss */
+/* line 123, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: bold;
   height: 20px;
   top: 50%;
   margin-top: -10px;
 }
-/* line 118, ../dev/sass/_navbar.scss */
+/* line 129, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul {
   margin: 0;
 }
-/* line 121, ../dev/sass/_navbar.scss */
+/* line 132, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a {
   -webkit-transition: background 0.25s ease, color 0.25s ease;
   -o-transition: background 0.25s ease, color 0.25s ease;
   transition: background 0.25s ease, color 0.25s ease;
 }
-/* line 123, ../dev/sass/_navbar.scss */
+/* line 134, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:focus {
   opacity: .75;
   color: #fff;
 }
-/* line 130, ../dev/sass/_navbar.scss */
+/* line 141, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a {
   display: block;
   padding: 2px 5px 1px 5px;
@@ -11217,17 +11231,17 @@ footer .social .icon-social.youtube {
   -o-transition: background 0.25s ease, color 0.25s ease;
   transition: background 0.25s ease, color 0.25s ease;
 }
-/* line 136, ../dev/sass/_navbar.scss */
+/* line 147, ../dev/sass/_navbar.scss */
 .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:focus {
   background: white;
   opacity: 1;
   color: #D81313;
 }
-/* line 150, ../dev/sass/_navbar.scss */
+/* line 161, ../dev/sass/_navbar.scss */
 .navbar.top {
   position: relative;
 }
-/* line 154, ../dev/sass/_navbar.scss */
+/* line 165, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-header {
   width: 100%;
   position: absolute;
@@ -11240,18 +11254,18 @@ footer .social .icon-social.youtube {
   align-items: center;
   text-align: center;
 }
-/* line 162, ../dev/sass/_navbar.scss */
+/* line 173, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-header .navbar-brand {
   padding: 0;
   margin-top: 0;
   /* margin-left: 20px; */
 }
-/* line 166, ../dev/sass/_navbar.scss */
+/* line 177, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-header .navbar-brand img {
   height: 180px;
   width: auto;
 }
-/* line 173, ../dev/sass/_navbar.scss */
+/* line 184, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav {
   width: 100%;
   text-align: center;
@@ -11262,7 +11276,7 @@ footer .social .icon-social.youtube {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 179, ../dev/sass/_navbar.scss */
+/* line 190, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .left, .navbar.top .background .container .navbar-collapse .navbar-nav .right {
   text-align: center;
   display: -webkit-flex;
@@ -11272,44 +11286,44 @@ footer .social .icon-social.youtube {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 185, ../dev/sass/_navbar.scss */
+/* line 196, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .left {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-right: 80px;
 }
-/* line 188, ../dev/sass/_navbar.scss */
+/* line 199, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .left li {
   margin-right: 20px;
 }
-/* line 190, ../dev/sass/_navbar.scss */
+/* line 201, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .left li:last-child {
   margin-right: 0;
 }
-/* line 195, ../dev/sass/_navbar.scss */
+/* line 206, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .right {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-left: 60px;
 }
-/* line 198, ../dev/sass/_navbar.scss */
+/* line 209, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .right li {
   margin-left: 20px;
 }
-/* line 200, ../dev/sass/_navbar.scss */
+/* line 211, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .right li:last-child {
   margin-left: 0;
 }
-/* line 203, ../dev/sass/_navbar.scss */
+/* line 214, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav .right li.book-ticket {
   margin-left: 20px;
 }
-/* line 209, ../dev/sass/_navbar.scss */
+/* line 220, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav li.language {
   position: absolute;
   right: 40px;
 }
-/* line 212, ../dev/sass/_navbar.scss */
+/* line 223, ../dev/sass/_navbar.scss */
 .navbar.top .background .container .navbar-collapse .navbar-nav li.language li.active-lang {
   padding: 0;
 }
