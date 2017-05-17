@@ -42,7 +42,7 @@
         <!-- Navbar slide -->
         <nav id="navbarTop" class="navbar nav-down">
             <div class="background">
-              <div class="container">
+              <div class="container-fluid">
                 <!-- Optimisation Mobile -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,12 +56,14 @@
                 <!-- Menu Fix -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#navbarMain">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#navbarTop">Home <span class="sr-only">(current)</span></a></li>
                     <li><a href="#program">Schedule</a></li>
                     <li><a href="#speakers">Speakers</a></li>
                     <li><a href="#information">Information</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
                     <li class="book-ticket"><a href="#tickets"><i class="fa fa-ticket" aria-hidden="true"></i>Ticket</a></li>
+                    <li class="account"><a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My Account</a>
+                    </li>
                     <li class="social">
                         <ul class="list-unstyled list-inline">
                             <li class="icon-social facebook"><a href="https://www.facebook.com/SmartCastNinja/" target="_blank">&nbsp;</a></li>
@@ -85,7 +87,6 @@
         <nav id="navbarMain" class="navbar top hidden-xs">
             <div class="background">
                 <div class="container">
-                    <!-- Optimisation Mobile -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -102,15 +103,18 @@
                                 <li><a href="#navbarMain">Home <span class="sr-only">(current)</span></a></li>
                                 <li><a href="#program">Schedule</a></li>
                                 <li><a href="#speakers">Speakers</a></li>
+                                <li><a href="#information">Information</a></li>
                             </div>
                             <div class="col-xs-6 right">
-                                <li><a href="#information">Information</a></li>
                                 <li><a href="#" data-toggle="modal" data-target="#modalcontact">Contacts</a></li>
                                 <li class="book-ticket"><a href="#tickets"><i class="fa fa-ticket" aria-hidden="true"></i>Ticket</a></li>
+                                <li class="account"><a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My Account</a>
+                            </li>
                             </div>
+                            
                             <li class="language">
                                 <ul class="list-unstyled list-inline">
-                                    <li><a href="../index.html">FR</a></li>
+                                    <li><a href="/">FR</a></li>
                                     <li class="active-lang"><a href="/en">EN</a></li>
                                 </ul>
                             </li>
@@ -362,7 +366,7 @@
                         </div>
                         <div class="infos">
                             <div class="name">Stéphan Euthine</div>
-                            <div class="fonction">Co-Owner & COO LDLC Event</div>
+                            <div class="fonction">Co-owner & COO of LDLC Event</div>
                         </div>
                         </a>
                     </div>
@@ -476,7 +480,7 @@
                         </div>
                         <div class="infos">
                             <div class="name">Carson Knuth</div>
-                            <div class="fonction">Co-Owner Rogue</div>
+                            <div class="fonction">Co-owner Rogue</div>
                         </div>
                         </a>
                     </div>
@@ -632,6 +636,8 @@
                     <img src="../resources/logo/dojo-esport-light-icon.svg" alt="logo">
                     © 2017 Dojo Esport. All rights reserved.
                     <a href="#" data-toggle="modal" data-target="#modalmentionslegales">Legal Mentions</a>
+                    -
+                    <a href="#" data-toggle="modal" data-target="#modalpresskit">Press Kit</a>
                 </div>
                 <ul class="col-xs-12 col-sm-6 list-unstyled list-inline social">
                     <li class="icon-social facebook"><a href="https://www.facebook.com/SmartCastNinja/" target="_blank">&nbsp;</a></li>
@@ -761,7 +767,7 @@
                     <div class="modal-body">
                         <div class="text">
                             <p>
-                                France Marketing manager of Ubisoft, he has been part of the video game market since the beginning of his career. His knowledge will be put to use during the workshop about the Olympism as well as the soft power conference.
+                                France Marketing manager of Ubisoft, he has been part of the video game market since the beginning of his career. He worked for Atari, then Activision, and today he is in charge of esports games for Ubisoft as well as being a member at the S.E.L.L. about esports topics. His knowledge will be put to use during the workshop about the Olympism as well as the soft power conference.
                             </p>
                         </div> 
                     </div>
@@ -845,9 +851,32 @@
                     <div class="modal-body">
                         <div class="text">
                             <p>
-                                Carson Knuth is the co owner of Rogue. His presence to the Dojo Esport offers the point of view of a business owner of one of the best organizations in the world. He will speak up during the soft power conference as well as the Teams workshops.
+                                Carson Knuth is the co-owner of Rogue. His presence to the Dojo Esport offers the point of view of a business owner of one of the best organizations in the world. He will speak up during the soft power conference as well as the Teams workshops.
                             </p>
                         </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-Press Kit -->
+        <div class="modal fade" id="modalpresskit" tabindex="-1" role="dialog" aria-labelledby="ModalPressKit">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Press Kit</h4>
+                    </div>
+                    <div class="sep">&nbsp;</div>
+                    <div class="modal-body">
+                        <div class="text">
+                            <span class="info">Download the press kit resources:</span>
+                            <a href="../press-kit.zip">Click here</a>
+                        </div>
+                        <img class="line" src="../resources/icons/dojo-icon-line-02.svg" alt="separation">
+                        <div class="text">
+                            <span class="info">Download the press release:</span>
+                            <a href="../dojoesport-pressrelease-en.pdf" target="_blank">Click here</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9521,11 +9521,11 @@ body.swal2-iosfix {
   font-style: normal;
 }
 /* line 3, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog, .modal#modalmentionslegales .modal-dialog, .modal.modal-intervenants .modal-dialog {
+.modal#modalcontact .modal-dialog, .modal#modalmentionslegales .modal-dialog, .modal.modal-intervenants .modal-dialog, .modal#modalpresskit .modal-dialog {
   margin: 90px auto;
 }
 /* line 6, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header, .modal.modal-intervenants .modal-dialog .modal-content .modal-header {
+.modal#modalcontact .modal-dialog .modal-content .modal-header, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header, .modal.modal-intervenants .modal-dialog .modal-content .modal-header, .modal#modalpresskit .modal-dialog .modal-content .modal-header {
   background-image: radial-gradient(50% 137%, #2d4793 0%, #233877 100%);
   display: block;
   text-align: center;
@@ -9534,7 +9534,7 @@ body.swal2-iosfix {
   border-top-left-radius: 4px;
 }
 /* line 12, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header .modal-title, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header .modal-title, .modal.modal-intervenants .modal-dialog .modal-content .modal-header .modal-title {
+.modal#modalcontact .modal-dialog .modal-content .modal-header .modal-title, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header .modal-title, .modal.modal-intervenants .modal-dialog .modal-content .modal-header .modal-title, .modal#modalpresskit .modal-dialog .modal-content .modal-header .modal-title {
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -9543,17 +9543,17 @@ body.swal2-iosfix {
   font-size: 16px;
 }
 /* line 20, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header button, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button {
+.modal#modalcontact .modal-dialog .modal-content .modal-header button, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button, .modal#modalpresskit .modal-dialog .modal-content .modal-header button {
   color: #fff;
   opacity: 1;
   margin-top: 2px;
 }
 /* line 24, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-header button:hover, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button:hover, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button:hover {
+.modal#modalcontact .modal-dialog .modal-content .modal-header button:hover, .modal#modalmentionslegales .modal-dialog .modal-content .modal-header button:hover, .modal.modal-intervenants .modal-dialog .modal-content .modal-header button:hover, .modal#modalpresskit .modal-dialog .modal-content .modal-header button:hover {
   opacity: .5;
 }
 /* line 29, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .sep, .modal#modalmentionslegales .modal-dialog .modal-content .sep, .modal.modal-intervenants .modal-dialog .modal-content .sep {
+.modal#modalcontact .modal-dialog .modal-content .sep, .modal#modalmentionslegales .modal-dialog .modal-content .sep, .modal.modal-intervenants .modal-dialog .modal-content .sep, .modal#modalpresskit .modal-dialog .modal-content .sep {
   background-image: radial-gradient(50% 458%, #d81313 0%, #b01515 100%);
   display: block;
   width: 100%;
@@ -9561,41 +9561,41 @@ body.swal2-iosfix {
   margin-top: -1px;
 }
 /* line 36, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body, .modal.modal-intervenants .modal-dialog .modal-content .modal-body {
+.modal#modalcontact .modal-dialog .modal-content .modal-body, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body, .modal.modal-intervenants .modal-dialog .modal-content .modal-body, .modal#modalpresskit .modal-dialog .modal-content .modal-body {
   text-align: center;
   padding: 30px;
 }
 /* line 39, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text {
   color: #050F21;
   display: inline-block;
 }
 /* line 42, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text .info, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text .info, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text .info {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text .info, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text .info, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text .info, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text .info {
   display: inline-block;
   width: 100%;
 }
 /* line 46, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text a {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text a, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text a {
   display: inline-block;
   width: 100%;
   color: #2D4793;
 }
 /* line 51, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text p {
   margin-bottom: 20px;
   text-align: left;
 }
 /* line 54, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p a {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p a, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p a, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p a, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text p a {
   display: inline;
 }
 /* line 57, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body .text p:last-child, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p:last-child, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p:last-child {
+.modal#modalcontact .modal-dialog .modal-content .modal-body .text p:last-child, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body .text p:last-child, .modal.modal-intervenants .modal-dialog .modal-content .modal-body .text p:last-child, .modal#modalpresskit .modal-dialog .modal-content .modal-body .text p:last-child {
   margin-bottom: 0;
 }
 /* line 62, ../dev/sass/_modal.scss */
-.modal#modalcontact .modal-dialog .modal-content .modal-body img.line, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body img.line, .modal.modal-intervenants .modal-dialog .modal-content .modal-body img.line {
+.modal#modalcontact .modal-dialog .modal-content .modal-body img.line, .modal#modalmentionslegales .modal-dialog .modal-content .modal-body img.line, .modal.modal-intervenants .modal-dialog .modal-content .modal-body img.line, .modal#modalpresskit .modal-dialog .modal-content .modal-body img.line {
   width: 50%;
   opacity: .25;
   display: inline-block;
@@ -9623,6 +9623,14 @@ body.swal2-iosfix {
   margin-bottom: 60px;
   display: block;
   position: relative;
+}
+
+/* line 9, ../dev/sass/_account.scss */
+body section.myaccount .container form .form-group input.form-control {
+  text-transform: uppercase;
+  height: inherit;
+  padding: 12px 12px 10px 12px;
+  line-height: 1.8;
 }
 
 /* line 1, ../dev/sass/_home.scss */
@@ -11065,7 +11073,7 @@ footer .social .icon-social.youtube {
   justify-content: space-around;
 }
 /* line 19, ../dev/sass/_navbar.scss */
-#navbarTop .background .container .navbar-collapse ul.navbar-nav li.language {
+#navbarTop .background .container-fluid .navbar-collapse ul.navbar-nav li.language {
   margin-top: -2px;
 }
 
@@ -11076,7 +11084,7 @@ footer .social .icon-social.youtube {
   top: 0;
   width: 100%;
   background-image: radial-gradient(50% 100%, #152145 50%, #050f21 100%);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.50px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -11114,32 +11122,37 @@ footer .social .icon-social.youtube {
   background: url(../resources/bg/dojo-pattern-01b.svg) repeat 200px;
   background-size: 200px;
 }
-/* line 55, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-header {
-  flex: 1;
+/* line 54, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid, .navbar .background .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-/* line 57, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-header a.navbar-brand {
+/* line 60, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-header a.navbar-brand, .navbar .background .container .navbar-header a.navbar-brand {
   padding: 10px 15px;
 }
-/* line 59, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-header a.navbar-brand img {
+/* line 62, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-header a.navbar-brand img, .navbar .background .container .navbar-header a.navbar-brand img {
   width: 40px;
   height: auto;
   display: block;
   margin: auto;
 }
-/* line 70, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li > a {
+/* line 73, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li > a, .navbar .background .container .navbar-collapse ul.navbar-nav li > a {
   padding-bottom: 20px;
   padding-top: 22px;
 }
-/* line 74, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket {
+/* line 77, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.book-ticket, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket {
   padding: 14px 10px;
 }
-/* line 76, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a {
+/* line 79, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.book-ticket a, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a {
   display: block;
   padding: 7px 10px 5px 10px;
   background: #D81313;
@@ -11147,80 +11160,102 @@ footer .social .icon-social.youtube {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 82, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:focus {
+/* line 85, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.book-ticket a:hover, .navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.book-ticket a:focus, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a:focus {
   background: white;
   color: #D81313;
 }
-/* line 86, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a i.fa {
+/* line 89, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.book-ticket a i.fa, .navbar .background .container .navbar-collapse ul.navbar-nav li.book-ticket a i.fa {
   margin-right: 4px;
 }
-/* line 91, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social {
+/* line 94, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social, .navbar .background .container .navbar-collapse ul.navbar-nav li.social {
   padding: 12px 30px 10px 30px;
 }
-/* line 93, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul {
+/* line 96, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul {
   margin: 0;
 }
-/* line 95, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social {
+/* line 98, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social {
   width: 34px;
   height: 34px;
   margin: 0 2px;
 }
-/* line 100, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social a {
+/* line 103, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social a, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 105, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social:hover {
+/* line 108, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social:hover {
   opacity: .90;
 }
-/* line 108, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.facebook {
+/* line 111, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social.facebook, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.facebook {
   background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
 }
-/* line 111, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.twitter {
+/* line 114, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social.twitter, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.twitter {
   background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
 }
-/* line 114, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.linkedin {
+/* line 117, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social.linkedin, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.linkedin {
   background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
 }
-/* line 117, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.youtube {
+/* line 120, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.social ul .icon-social.youtube, .navbar .background .container .navbar-collapse ul.navbar-nav li.social ul .icon-social.youtube {
   background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
 }
-/* line 123, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language {
-  font-size: 12px;
+/* line 126, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.account, .navbar .background .container .navbar-collapse ul.navbar-nav li.account {
+  padding: 14px 10px;
+}
+/* line 128, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.account a, .navbar .background .container .navbar-collapse ul.navbar-nav li.account a {
+  display: block;
+  padding: 7px 10px 5px 10px;
+  background: #2D4793;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 134, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.account a:hover, .navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.account a:focus, .navbar .background .container .navbar-collapse ul.navbar-nav li.account a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.account a:focus {
+  background: white;
+  color: #2D4793;
+}
+/* line 138, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.account a i.fa, .navbar .background .container .navbar-collapse ul.navbar-nav li.account a i.fa {
+  margin-right: 4px;
+}
+/* line 143, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language, .navbar .background .container .navbar-collapse ul.navbar-nav li.language {
+  font-size: 11px;
   font-weight: bold;
   height: 20px;
   top: 50%;
   margin-top: -10px;
 }
-/* line 129, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language ul {
+/* line 149, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul {
   margin: 0;
 }
-/* line 132, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a {
+/* line 152, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul li a, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a {
   -webkit-transition: background 0.25s ease, color 0.25s ease;
   -o-transition: background 0.25s ease, color 0.25s ease;
   transition: background 0.25s ease, color 0.25s ease;
 }
-/* line 134, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:focus {
+/* line 154, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul li a:hover, .navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul li a:focus, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul li a:focus {
   opacity: .75;
   color: #fff;
 }
-/* line 141, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a {
+/* line 161, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul .active-lang a, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a {
   display: block;
   padding: 2px 5px 1px 5px;
   background: #D81313;
@@ -11231,18 +11266,18 @@ footer .social .icon-social.youtube {
   -o-transition: background 0.25s ease, color 0.25s ease;
   transition: background 0.25s ease, color 0.25s ease;
 }
-/* line 147, ../dev/sass/_navbar.scss */
-.navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:focus {
+/* line 167, ../dev/sass/_navbar.scss */
+.navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul .active-lang a:hover, .navbar .background .container-fluid .navbar-collapse ul.navbar-nav li.language ul .active-lang a:focus, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:hover, .navbar .background .container .navbar-collapse ul.navbar-nav li.language ul .active-lang a:focus {
   background: white;
   opacity: 1;
   color: #D81313;
 }
-/* line 161, ../dev/sass/_navbar.scss */
+/* line 181, ../dev/sass/_navbar.scss */
 .navbar.top {
   position: relative;
 }
-/* line 165, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-header {
+/* line 185, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-header, .navbar.top .background .container .navbar-header {
   width: 100%;
   position: absolute;
   left: 0;
@@ -11254,19 +11289,19 @@ footer .social .icon-social.youtube {
   align-items: center;
   text-align: center;
 }
-/* line 173, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-header .navbar-brand {
+/* line 193, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-header .navbar-brand, .navbar.top .background .container .navbar-header .navbar-brand {
   padding: 0;
   margin-top: 0;
   /* margin-left: 20px; */
 }
-/* line 177, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-header .navbar-brand img {
+/* line 197, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-header .navbar-brand img, .navbar.top .background .container .navbar-header .navbar-brand img {
   height: 180px;
   width: auto;
 }
-/* line 184, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav {
+/* line 204, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav, .navbar.top .background .container .navbar-collapse .navbar-nav {
   width: 100%;
   text-align: center;
   display: -webkit-flex;
@@ -11276,8 +11311,8 @@ footer .social .icon-social.youtube {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 190, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .left, .navbar.top .background .container .navbar-collapse .navbar-nav .right {
+/* line 210, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .left, .navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right, .navbar.top .background .container .navbar-collapse .navbar-nav .left, .navbar.top .background .container .navbar-collapse .navbar-nav .right {
   text-align: center;
   display: -webkit-flex;
   display: flex;
@@ -11286,45 +11321,45 @@ footer .social .icon-social.youtube {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 196, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .left {
+/* line 216, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .left, .navbar.top .background .container .navbar-collapse .navbar-nav .left {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-right: 80px;
 }
-/* line 199, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .left li {
+/* line 219, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .left li, .navbar.top .background .container .navbar-collapse .navbar-nav .left li {
   margin-right: 20px;
 }
-/* line 201, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .left li:last-child {
+/* line 221, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .left li:last-child, .navbar.top .background .container .navbar-collapse .navbar-nav .left li:last-child {
   margin-right: 0;
 }
-/* line 206, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .right {
+/* line 226, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right, .navbar.top .background .container .navbar-collapse .navbar-nav .right {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   padding-left: 60px;
 }
-/* line 209, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .right li {
+/* line 229, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right li, .navbar.top .background .container .navbar-collapse .navbar-nav .right li {
   margin-left: 20px;
 }
-/* line 211, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .right li:last-child {
+/* line 231, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right li:last-child, .navbar.top .background .container .navbar-collapse .navbar-nav .right li:last-child {
   margin-left: 0;
 }
-/* line 214, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav .right li.book-ticket {
-  margin-left: 20px;
+/* line 234, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right li.book-ticket, .navbar.top .background .container-fluid .navbar-collapse .navbar-nav .right li.account, .navbar.top .background .container .navbar-collapse .navbar-nav .right li.book-ticket, .navbar.top .background .container .navbar-collapse .navbar-nav .right li.account {
+  margin-left: 10px;
 }
-/* line 220, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav li.language {
+/* line 247, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav li.language, .navbar.top .background .container .navbar-collapse .navbar-nav li.language {
   position: absolute;
   right: 40px;
 }
-/* line 223, ../dev/sass/_navbar.scss */
-.navbar.top .background .container .navbar-collapse .navbar-nav li.language li.active-lang {
+/* line 250, ../dev/sass/_navbar.scss */
+.navbar.top .background .container-fluid .navbar-collapse .navbar-nav li.language li.active-lang, .navbar.top .background .container .navbar-collapse .navbar-nav li.language li.active-lang {
   padding: 0;
 }
 
@@ -11535,7 +11570,7 @@ footer .social .icon-social.youtube {
     z-index: 101;
   }
   /* line 20, ../dev/sass/_home-responsive.scss */
-  #navbarTop .container {
+  #navbarTop .container-fluid {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;

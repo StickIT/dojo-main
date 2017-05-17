@@ -13,7 +13,7 @@
 	  	@include justify-content(space-around);
 	}
 	.background{
-		.container{
+		.container-fluid{
 			.navbar-collapse{
 				ul.navbar-nav{
 					li.language{
@@ -30,7 +30,7 @@
 	top: 0;
 	width:100%;
 	background-image: radial-gradient(50% 100%, darken($dojo-blue, 20%) 50%, $dojo-darkblue 100%);
-	font-size: 12px;
+	font-size: 11px;
 	letter-spacing: 0.50px;
 	text-transform: uppercase;
 	margin-bottom: 0;
@@ -51,9 +51,12 @@
 	.background{
 		background: url(../resources/bg/dojo-pattern-01b.svg) repeat 200px;
 		background-size: 200px;
-		.container{
+		.container-fluid,.container{
+			@include display-flex;
+	  		@include align-items(center);
+	  		@include justify-content(center);
 			.navbar-header{
-				flex:1;
+				// flex:1;
 				a.navbar-brand{
 					padding: 10px 15px;
 					img{
@@ -120,8 +123,25 @@
 				  				}
 				  			}
 				  		}
+				  		&.account{
+							padding: 14px 10px;
+							a{
+								display:block;
+								padding:7px 10px 5px 10px;
+								background:$dojo-blue;
+								@include border-radius(2px);
+
+								&:hover, &:focus{
+									background:white;
+									color: $dojo-blue;
+								}
+								i.fa{
+									margin-right: 4px;
+								}
+							}
+						}
 						&.language{
-							font-size: 12px;
+							font-size: 11px;
 							font-weight: bold;
 							height: 20px;
 							top: 50%;
@@ -161,7 +181,7 @@
 	&.top{
 		position:relative;
 		.background{
-			.container{
+			.container-fluid,.container{
 				.navbar-header{
 					width: 100%;
 					position: absolute;
@@ -211,12 +231,19 @@
 								&:last-child{
 									margin-left: 0;
 								}
-								&.book-ticket{
-									margin-left: $space-size;	
+								&.book-ticket,&.account{
+									margin-left: $space-size/2;	
 								}					
 							}
 					  	}		
 						li{
+							// &.account{
+							// 	position: absolute;
+							// 	right: $space-size*6;
+							// 	li.active-lang{
+							// 		padding: 0;
+							// 	}
+							// }
 							&.language{
 								position: absolute;
 								right: $space-size*2;

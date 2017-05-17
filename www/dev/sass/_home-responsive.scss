@@ -17,7 +17,7 @@
 	}
 	#navbarTop{
 		z-index:101;
-		.container{
+		.container-fluid{
 			@include display-flex;
 			@include flex-direction(column);
 		  	@include align-items(center);

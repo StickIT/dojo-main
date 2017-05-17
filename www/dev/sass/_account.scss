@@ -1,0 +1,19 @@
+body{
+	section.myaccount{
+		.container{
+			form{
+				.form-group{
+					label{
+
+					}
+					input.form-control{
+						text-transform: uppercase;
+						height: inherit;
+						padding: 12px 12px 10px 12px;
+						line-height: 1.8;
+					}
+				}
+			}
+		}
+	}
+}
