@@ -1,17 +1,244 @@
 body{
-	section.myaccount{
-		.container{
+	.myaccount{
+		padding: $space-size*2 0 $space-size*4;
+		.legals{
+			margin-top: $space-size;
+			color: $gray-light;
+			font-size: $font-size-small;
+		}
+		.cancel{
+			.btn{
+				padding-top: 8px;
+				height: 62px;
+			}
+		}
+		h4{
+			margin-bottom: $space-size;
+			text-align: center;
+		}
+		.container{			
+			.signin{	
+				@include btn-dojo-primary(100%,  14px, $dojo-blue);		
+			}
+			.signup{	
+				@include btn-dojo-primary(100%,  14px, $dojo-primary);		
+			}
 			form{
+				color: $dojo-darkblue;
+				a{
+					color: $dojo-blue;
+					&:hover, &:focus{
+						color: $dojo-primary;
+					}
+				}
 				.form-group{
-					label{
-
+					.input-group-addon{						
+						color:white;
+						background: $dojo-blue;
+						border: 2px solid darken($dojo-blue, 10%);
+						@include border-right-radius(3px);
 					}
-					input.form-control{
-						text-transform: uppercase;
-						height: inherit;
-						padding: 12px 12px 10px 12px;
-						line-height: 1.8;
+					.form-control{						
+						height: 48px;
+						padding-top: 4px 6px 0 !important;
+						border: 2px solid rgba($gray-light, .3);
+						@include box-shadow(none);
 					}
+					.btn-label{
+						width: 100%;
+						line-height: 48px;
+						text-align: center;
+						color:white;
+						background: $dojo-blue;
+						border: 2px solid darken($dojo-blue, 10%);
+						@include border-radius(3px);
+						cursor:pointer;
+						font-weight: 300;
+					}
+				}
+				.signinMore{
+					margin-top: $space-size;
+					color: $dojo-darkblue;
+					font-size: $font-size-small;
+					vertical-align: middle;
+					.stayConnected{
+						line-height: $space-size;
+					}
+					.lostPassword{
+						text-align: right;
+						line-height: $space-size;
+						margin: $space-size/2 0;
+					}
+				}
+			}
+		}
+		.myTickets{
+			@include display-flex;
+			@include flex-direction(row);
+		  	@include align-items(stretch);
+		  	@include justify-content(center);
+		  	padding-top: $space-size*2;
+			.card{
+				display: block;
+				@include border-radius(8px);
+				@include display-flex;
+				@include flex-direction(column);
+			  	@include align-items(stretch);
+				padding:0;
+				margin: 0 $space-size;
+				@include box-shadow(0 1px 3px 1px rgba($dojo-darkblue, 0.35));
+				.head{
+					background-color: $dojo-blue;
+					display: inline-block;
+					text-align: center;
+					width: 100%;
+					color: #fff;
+					font-size: $font-size-h4;
+					text-transform: uppercase;
+					padding: 20px 0;
+					@include border-top-radius(8px);
+					@include background-image(linear-gradient(darken($dojo-blue, 15%), $dojo-blue));
+					@include box-shadow(0 1px 0 0 rgba($dojo-blue, .5) inset);
+					img{
+						width:60px;
+						margin-bottom: 10px;
+						opacity: .3;
+					}
+					.nom{
+						display: inline-block;
+						width: 100%;
+						font-weight: normal;
+					}
+					.number{
+						display: inline-block;
+						width: 100%;
+						font-weight: 300;
+						font-size: $font-size-small;
+					}
+				}
+				.inside{
+				  	flex:1;
+				  	justify-content: center;
+				  	text-align: center;
+					background: #f6f6f6;
+					.stock{
+						position: relative;
+						margin:0 auto;
+						display: inline-block;
+					  	justify-content: center;
+						color:#fff;
+						width: 80%;
+						height:30px;
+						font-size: $font-size-small;
+						margin-bottom: $space-size*1.5;
+						.shadow{		
+							position: absolute;
+							bottom: 1px;
+							left: 50%;
+							width:80%;
+							margin-left:-40%;
+							height:20px;
+							background:rgba(#000, 1);
+							@include border-radius(#{50%} / 25%);
+							@include box-shadow(rgba(#000, .6) 0 0px 10px 3px);
+							z-index:0;
+						}
+						.owner{
+							background-color: $dojo-blue;
+							font-weight: lighter;
+							text-transform: uppercase;
+							display: block;
+							z-index:1;
+							position: absolute;
+							width: 100%;
+							line-height: 30px;
+							@include border-bottom-radius(4px);
+							margin-top: -1px;
+						}
+					}
+					.citation{
+						margin:0 auto;
+						opacity: .75;
+						margin-bottom: $space-size*1.5;
+						width: 100%;
+						.society{
+							font-weight: bold;
+							font-size: $font-size-base*1.25;
+							text-transform: uppercase;
+							color: $dojo-blackblue;
+						}
+						.job{
+							font-weight: 300;
+							font-size: $font-size-small;
+							text-transform: uppercase;
+							color: $dojo-darkblue;
+						}
+					}
+					.title{
+						background: $dojo-darkblue;
+						color: white;
+						line-height: 36px;
+						@include display-flex;
+						@include flex-direction(row);
+					  	@include align-items(stretch);
+					  	@include justify-content(flex-start);
+						.text{
+							flex:5;	
+							text-align: left;
+							padding: $space-size/2 $space-size;
+						}
+						.button{
+							flex:1;
+							padding: $space-size/2 $space-size;
+							background:$dojo-lightblue;
+							@include transition(background .3s ease, color .3s ease);
+							&:hover,&:focus{
+								background: white;
+								color:$dojo-darkblue;
+							}
+						}
+					}
+					ul{
+						color: $dojo-darkblue;
+						margin: 0;
+						padding: 0;
+						li{
+							@include display-flex;
+							@include flex-direction(row);
+						  	@include align-items(stretch);
+						  	@include justify-content(flex-start);
+							text-align: left;
+							border-top:1px solid white;
+							border-bottom:1px solid white;
+							padding: 0;
+							.partLeft{
+								font-size: $font-size-small;
+								font-weight: 300;
+								background: $dojo-blue;
+								color: white;
+								padding: $space-size/2 $space-size;
+								flex:1;
+							}
+							.partRight{			
+								font-size: $font-size-small;			
+								padding: $space-size/2 $space-size;
+								flex:3;
+							}
+						}
+					}
+				}
+				.bottom{
+					@include background-image(linear-gradient(darken($dojo-blue, 5%), darken($dojo-blue, 15%)));				
+					@include box-shadow(0 -1px 0 0 rgba($dojo-blue, .5) inset, 0 1px 0 0 rgba(black, .45) inset);
+					display: block;
+					width: 100%;
+					padding: $space-size/2 0;
+					font-size: $font-size-base;
+					text-transform: uppercase;
+					bottom:0;
+					text-align: center;
+					@include border-bottom-radius(8px);
+					@include transition(background .6s ease);
 				}
 			}
 		}

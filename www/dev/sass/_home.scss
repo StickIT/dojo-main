@@ -6,7 +6,8 @@ html, body{
 body{
 	background: $dojo-darkblue;
 	color:white;
-	@include btn-dojo-primary(500px,  14px);
+	@include btn-dojo-primary(100%,  14px);
+	@include dojo-divider-01(100%, 30px);
 }
 // Tools
 a{

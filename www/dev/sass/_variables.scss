@@ -36,8 +36,41 @@ $dojo-orange:			#ff7200 !default;
 $dojo-purple:			#ff0096 !default;
 
 // Dojo's Gradient
-@mixin dojo-primary-ramp{
-	@include background-image(linear-gradient($dojo-primary, darken($dojo-primary, 10%)));
+@mixin dojo-primary-ramp($color){
+	@include background-image(linear-gradient($color, darken($color, 10%)));
+}
+
+// Dojo's Divider
+@mixin dojo-divider-01($width: null, $height: 40px){
+	.dojo-divider-01{
+		position: relative;
+		width: 100%;
+		height: $height;
+		margin: $space-size*2 0;
+		opacity: .15;
+		background: url(../resources/icons/dojo-icon-totem-02.svg) no-repeat center center;
+		&:before, &:after{
+			content: "";
+			position: absolute;
+		}
+		&:before{
+			width: 50%;
+			height: 100%;
+			top: 0;
+			left: -$height/1.5;
+			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat;
+			background-position: left center;
+			@include rotate(180deg);
+		}
+		&:after{
+			width: 50%;
+			height: 100%;
+			top: 0;
+			right: -$height/1.5;
+			background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat;
+			background-position: left center;
+		}
+	}
 }
 
 // Video Split Size
@@ -187,9 +220,9 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 $dojo-blue !default;
+$btn-default-border:             $dojo-softblue  !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;

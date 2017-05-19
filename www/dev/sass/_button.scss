@@ -1,8 +1,9 @@
-@mixin btn-dojo-primary($size: null, $padding: null){
+@mixin btn-dojo-primary($size: null, $padding: null, $color: $dojo-primary, $textColor: white){
 	.field{
 		position: relative;
 		width: $size;
 		.group-btn-dojo-primary{
+			color: $textColor;
 			width: 100%;
 			@include display-flex;
 			@include flex-direction(row);
@@ -11,7 +12,6 @@
 				float:left;
 				width:22px;
 				height:22px;
-				// background:white;
 				background-image: url(../resources/icons/dojo-icon-mail.svg);
 			}
 			input{
@@ -35,14 +35,21 @@
 					color: rgba(white, .6);
 				}
 			}
+			.text{
+				width: $size;
+				line-height: 34px;
+				font-family: $headline-font;
+				font-weight:100;		
+				text-transform: uppercase;
+			}
 			z-index:1;
 			padding: $padding 20px;
 			overflow: hidden;
-			@include dojo-primary-ramp();
+			@include dojo-primary-ramp($color);
 			@include border-radius(6px);
-			@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($dojo-primary, .3) 0 0px 30px);			
+			@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($color, .3) 0 0px 30px);			
 			&:hover{
-				@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($dojo-primary, .6) 0 0px 30px);
+				@include box-shadow(rgba(#000, .15) 0 0px 1px 1px, rgba(#000, .1) 0 0 1px 1px inset, rgba(#fff, .1) 0 1px 1px 1px inset, rgba($color, .6) 0 0px 30px);
 			}
 			&:before{
 				content: "";
@@ -62,7 +69,7 @@
 				width:100%;
 				height:20px;
 				@include border-radius(#{50%} / 25%);
-				background:rgba($dojo-primary, .35);
+				background:rgba($color, .35);
 			}
 			.input-group-btn{
 				position: absolute;
@@ -71,18 +78,18 @@
 				right: -10px;
 				width: 20%;
 				height: 100%;
-				background: rgba(darken($dojo-primary, 30%), .35);
+				background: rgba(darken($color, 30%), .35);
 				overflow: hidden;
-				@include box-shadow(rgba(#000, .35) 0 0px 1px 1px, rgba($dojo-primary, .25) 0 1px 1px 1px inset);	
+				@include box-shadow(rgba(#000, .35) 0 0px 1px 1px, rgba($color, .25) 0 1px 1px 1px inset);	
 				@include transition(background .3s ease, transform .3s ease);		
 				@include skewX(-15deg);
 				&:before{
 					content:"";
 					position: absolute;
-					width: 50px;
+					width: 5%;
 					height: 100%;
-					background:rgba($dojo-primary, .5);
-					@include translateX(-60px);
+					background:rgba($color, .5);
+					@include translateX(-120%);
 					@include transition(transform .3s ease-out, width .3s ease-out);	
 				}
 				&:after{
@@ -99,11 +106,11 @@
 					background-image: url(../resources/icons/dojo-icon-arrow-right.svg);
 					@include skewX(15deg);	
 				}
-				&:hover{
-					background: rgba(darken($dojo-primary, 50%), .35);					
+				&:hover, &:focus{
+					background: rgba(darken($color, 50%), .35);					
 					&:before{
 						width:5px;
-						@include translateX(100px);
+						@include translateX(120%);
 					}
 				}
 			}

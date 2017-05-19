@@ -163,51 +163,115 @@
         <!-- Container -->
         <section class="wrapper myaccount">
             <div class="container">
-                <div class="col-sm-offset-4 col-sm-4 col-xs-12">    
-                    <div class="signin">     
-                        <form action="" class="">    
-                            <div class="field">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputEmail3">Adresse E-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Adresse E-mail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputPassword3">Mot de passe</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Mot de passe">
-                                    </div>
-                                    <div class="input-group group-btn-dojo-primary">
-                                        <span class="text">Se connecter à votre compte</span>
-                                        <span class="input-group-btn">
-                                            <input type="submit" class="btn btn-default submit" value="" />
-                                        </span>
-                                    </div>
-                                    <div class="shadow">&nbsp;</div>
+                <div class="col-sm-offset-3 col-sm-6 col-xs-12">  
+                    <form action="" class="row">  
+                        <div class="col-xs-12 form-group">
+                            <select class="form-control">
+                                <option disabled selected>Civilité</option>
+                                <option>Madame</option>
+                                <option>Monsieur</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Nom</label>
+                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Nom">
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Prénom</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Prénom">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Adresse e-mail</label>
+                            <input type="email" class="form-control" id="exampleInputPassword3" placeholder="Adresse e-mail">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Numéro de téléphone</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Numéro de téléphone">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <i class="fa fa-fw fa-calendar-o" aria-hidden="true"></i>
+                                </span>
                             </div>
-                            <div class="row signinMore">
-                                    <div class="col-xs-6 col-sm-6 stayConnected">
-                                        <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox"> Se souvenir de moi
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 lostPassword">
-                                        <a href="#">Mot de passe oublié ?</a>
-                                    </div>
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <select class="form-control">
+                                <option disabled selected>Département</option>
+                                <option>31100</option>
+                                <option>75015</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 form-group">
+                            <select class="form-control">
+                                <option disabled selected>Pays</option>
+                                <option>France</option>
+                                <option>Espagne</option>
+                            </select>
+                        </div>                        
+                        <div class="col-xs-12 form-group">
+                            <label class="btn-label" for="picture-profile">
+                                <i class="fa fa-fw fa-file-image-o" aria-hidden="true"></i> Choisissez une image de profil
+                                <input type="file"  id="picture-profile" style="display:none;">
+                            </label>
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Mot de passe</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Mot de passe">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Mot de passe</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Confirmation">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Entreprise</label>
+                            <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Entreprise">
+                        </div> 
+                        <div class="col-xs-12 form-group">
+                            <select class="form-control">
+                                <option disabled selected>Poste occupé</option>
+                                <option>Développeur</option>
+                                <option>Directeur</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Je souhaite m'abonner à la newsletter du Dojo Esport.
+                                </label>
                             </div>
-                        </form>
-                    </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Je souhaite apparaître sur le site Dojo Esport auprès des personnes ayant leur place.
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> J'ai lu et accepté les <a href="">conditions générales</a>.
+                                </label>
+                            </div>
+                        </div>
+                    </form>
                     <div class="dojo-divider-01"></div>
                     <div class="signup">                    
                         <div class="field">
                             <div class="input-group group-btn-dojo-primary">
-                                <span class="text">Créer un compte</span>
+                                <span class="text">Confirmer mon inscription</span>
                                 <span class="input-group-btn">
                                     <input type="submit" class="btn btn-default submit" value="" />
                                 </span>
                             </div>
                             <div class="shadow">&nbsp;</div>
                         </div>
+                    </div>
+                    <div class="legals">
+                        <p>
+                        Une fois ces informations renseignées et validées ainsi que votre billet pour la conférence lié à votre compte, votre profil apparaîtra dans la liste des participants à la conférence Dojo Esport et vous pourrez accéder aux profils des autres participants.
+                        </p>
+                        <p>
+                        Pour lier votre billet préalablement acheté à votre compte Dojo Esport, rendez-vous dans le menu "Mes billets" sur compte utilisateur.
+                        </p>
                     </div>
                 </div>
         </section>
