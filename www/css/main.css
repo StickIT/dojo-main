@@ -9631,7 +9631,7 @@ body .myaccount {
 }
 /* line 4, ../dev/sass/_account.scss */
 body .myaccount .legals {
-  margin-top: 20px;
+  margin-top: 40px;
   color: #777777;
   font-size: 12px;
 }
@@ -11613,8 +11613,16 @@ header .videoHeader .splitSkew svg {
   opacity: .2;
   margin-left: 20px;
 }
-
+/* line 787, ../dev/sass/_home.scss */
+.newsletter .buttonNL .field {
+  width: 50%;
+}
 /* line 790, ../dev/sass/_home.scss */
+.newsletter .buttonNL .field .nlField .group-btn-dojo-primary {
+  width: 100%;
+}
+
+/* line 798, ../dev/sass/_home.scss */
 .information {
   position: relative;
   background: white;
@@ -11622,7 +11630,7 @@ header .videoHeader .splitSkew svg {
   background-size: cover;
   height: 280px;
 }
-/* line 796, ../dev/sass/_home.scss */
+/* line 804, ../dev/sass/_home.scss */
 .information .block {
   position: absolute;
   right: 0;
@@ -11635,7 +11643,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
   box-shadow: -11px 11px 5px 0 rgba(5, 15, 33, 0.3), 0 0 2px 0 rgba(5, 15, 33, 0.5);
 }
-/* line 804, ../dev/sass/_home.scss */
+/* line 812, ../dev/sass/_home.scss */
 .information .block:after {
   content: "";
   position: absolute;
@@ -11649,7 +11657,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
   box-shadow: 0 0 0 1px rgba(129, 151, 216, 0.05) inset;
 }
-/* line 814, ../dev/sass/_home.scss */
+/* line 822, ../dev/sass/_home.scss */
 .information .block .head {
   width: 100%;
   color: #fff;
@@ -11665,7 +11673,7 @@ header .videoHeader .splitSkew svg {
   -webkit-box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
   box-shadow: 0 -1px 0px 0 rgba(129, 151, 216, 0.1) inset;
 }
-/* line 827, ../dev/sass/_home.scss */
+/* line 835, ../dev/sass/_home.scss */
 .information .block .inside {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -11677,7 +11685,7 @@ header .videoHeader .splitSkew svg {
   background-image: linear-gradient(#2d4793, #1b2b58);
   padding: 20px 20px;
 }
-/* line 831, ../dev/sass/_home.scss */
+/* line 839, ../dev/sass/_home.scss */
 .information .block .inside ul.liste {
   display: inline-block;
   text-align: left;
@@ -11687,26 +11695,26 @@ header .videoHeader .splitSkew svg {
   font-size: 12px;
   margin-bottom: 0;
 }
-/* line 840, ../dev/sass/_home.scss */
+/* line 848, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li {
   list-style: none;
   position: relative;
   color: #fff;
   padding-bottom: 10px;
 }
-/* line 846, ../dev/sass/_home.scss */
+/* line 854, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 851, ../dev/sass/_home.scss */
+/* line 859, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li i.fa {
   position: absolute;
   font-size: 16px;
   display: inline-block;
   margin-left: -40px;
 }
-/* line 858, ../dev/sass/_home.scss */
+/* line 866, ../dev/sass/_home.scss */
 .information .block .inside ul.liste li .title {
   display: block;
   text-transform: uppercase;
@@ -11715,14 +11723,14 @@ header .videoHeader .splitSkew svg {
   font-weight: 300;
 }
 
-/* line 871, ../dev/sass/_home.scss */
+/* line 879, ../dev/sass/_home.scss */
 footer {
   position: relative;
   padding: 20px 0;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 876, ../dev/sass/_home.scss */
+/* line 884, ../dev/sass/_home.scss */
 footer .container {
   display: -webkit-flex;
   display: flex;
@@ -11733,16 +11741,16 @@ footer .container {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 882, ../dev/sass/_home.scss */
+/* line 890, ../dev/sass/_home.scss */
 footer .brand {
   flex: 1;
 }
-/* line 884, ../dev/sass/_home.scss */
+/* line 892, ../dev/sass/_home.scss */
 footer .brand img {
   width: 40px;
   margin-right: 20px;
 }
-/* line 889, ../dev/sass/_home.scss */
+/* line 897, ../dev/sass/_home.scss */
 footer .social {
   margin: 0;
   display: -webkit-flex;
@@ -11754,35 +11762,35 @@ footer .social {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 895, ../dev/sass/_home.scss */
+/* line 903, ../dev/sass/_home.scss */
 footer .social .icon-social {
   width: 34px;
   height: 34px;
   margin: 0 2px;
 }
-/* line 899, ../dev/sass/_home.scss */
+/* line 907, ../dev/sass/_home.scss */
 footer .social .icon-social a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 904, ../dev/sass/_home.scss */
+/* line 912, ../dev/sass/_home.scss */
 footer .social .icon-social:hover {
   opacity: .90;
 }
-/* line 907, ../dev/sass/_home.scss */
+/* line 915, ../dev/sass/_home.scss */
 footer .social .icon-social.facebook {
   background-image: url(../resources/icons/dojo-icon-social-facebook-white.svg);
 }
-/* line 910, ../dev/sass/_home.scss */
+/* line 918, ../dev/sass/_home.scss */
 footer .social .icon-social.twitter {
   background-image: url(../resources/icons/dojo-icon-social-twitter-white.svg);
 }
-/* line 913, ../dev/sass/_home.scss */
+/* line 921, ../dev/sass/_home.scss */
 footer .social .icon-social.linkedin {
   background-image: url(../resources/icons/dojo-icon-social-linkedin-white.svg);
 }
-/* line 916, ../dev/sass/_home.scss */
+/* line 924, ../dev/sass/_home.scss */
 footer .social .icon-social.youtube {
   background-image: url(../resources/icons/dojo-icon-social-youtube-white.svg);
 }

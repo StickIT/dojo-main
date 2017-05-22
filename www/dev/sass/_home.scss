@@ -784,6 +784,14 @@ header{
 			opacity: .2;
 			margin-left:$space-size;
 		}
+		.field{
+			width: 50%;
+			.nlField{
+				.group-btn-dojo-primary{
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 // Information
