@@ -1,0 +1,75 @@
+// Smartphone portrait
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) and (orientation : portrait){
+	.guests{
+		.inside{
+			div{
+				@include display-flex;
+				@include flex-direction(column);
+				@include align-items(center);
+				@include justify-content(center);
+			  	.element{
+					height: 160px;
+					width: 160px;
+					.circle{
+						width: 160px;
+						height: 160px;		
+					}	
+				}
+			}
+		}
+	}
+}
+
+// Smartphone landscape
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) and (orientation : landscape){
+	.guests{
+		.inside{
+			div{
+			  	.element{
+					height: 90px;
+					width: 90px;
+					.circle{
+						width: 90px;
+						height: 90px;		
+					}	
+				}
+			}
+		}
+	}
+}
+
+// Tablet portrait
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation : portrait) {
+	.guests{
+		.inside{
+			div{
+			  	.element{
+					height: 100px;
+					width: 100px;
+					.circle{
+						width: 100px;
+						height: 100px;		
+					}	
+				}
+			}
+		}
+	}
+}
+
+// Tablet landscape
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation : landscape) {
+	.guests{
+		.inside{
+			div{
+			  	.element{
+					height: 140px;
+					width: 140px;
+					.circle{
+						width: 140px;
+						height: 140px;		
+					}	
+				}
+			}
+		}
+	}
+}

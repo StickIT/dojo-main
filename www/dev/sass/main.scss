@@ -11,8 +11,11 @@
 @import 'modal';
 @import 'billet';
 @import 'account';
+@import 'participants';
+@import 'cgu';
 // Desktop
 @import 'home';
 @import 'navbar';
 // Responsives
 @import '_home-responsive';
+@import '_participants-responsive';

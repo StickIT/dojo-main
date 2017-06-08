@@ -1,0 +1,44 @@
+body{
+	.cgu{
+		padding: $space-size*2.5 0 $space-size*4;
+		.container{			
+			.text{
+				color: $dojo-darkblue;
+				display: inline-block;
+				.info{
+					display: inline-block;
+					width: 100%;
+				}
+				a{
+					display: inline-block;
+					width: 100%;
+					color: $dojo-blue;
+				}
+				h4{
+					margin-top: $space-size*1.5;
+					margin-bottom: $space-size;
+					text-align: left;
+					font-weight: bold;
+					display: inline-block;
+				}
+				p{
+					margin-bottom: $space-size;
+					text-align: left;
+					a{
+						display: inline;
+					}
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+			img.line{
+				width: 50%;
+				opacity: .25;
+				display: inline-block;
+				margin-top: $space-size/2;
+				margin-bottom: $space-size/2;
+			}	
+		}
+	}
+}

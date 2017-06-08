@@ -525,9 +525,10 @@ header{
 					display: inline-block;
 					height: 56px;
 					width: auto;
+					margin-right: $space-size*4;
 				}
 				&:first-child{
-					margin-right: $space-size*4;
+					margin-right: 0;
 				}
 		  	}	
 	  	}

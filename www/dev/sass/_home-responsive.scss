@@ -108,9 +108,9 @@
 				@include flex-direction(column);
 				a{
 					margin: $space-size/2 0 !important;
-				}
-				img{
-					margin: 0 auto;
+					img{
+						margin: 0 auto;
+					}
 				}
 			}
 		}
