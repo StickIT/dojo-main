@@ -10432,6 +10432,10 @@ body .myaccount .myTickets .card .bottom {
   text-align: center;
   display: inline-block;
 }
+/* line 79, ../dev/sass/_participants.scss */
+.guests .inside div .element.space {
+  opacity: 0;
+}
 
 /* line 2, ../dev/sass/_cgu.scss */
 body .cgu {
@@ -12729,38 +12733,42 @@ footer .social .icon-social.youtube {
     width: 160px;
     height: 160px;
   }
+  /* line 17, ../dev/sass/_participants-responsive.scss */
+  .guests .inside div .element.space {
+    display: none;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 28, ../dev/sass/_participants-responsive.scss */
+  /* line 31, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element {
     height: 90px;
     width: 90px;
   }
-  /* line 31, ../dev/sass/_participants-responsive.scss */
+  /* line 34, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element .circle {
     width: 90px;
     height: 90px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-  /* line 46, ../dev/sass/_participants-responsive.scss */
+  /* line 49, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element {
     height: 100px;
     width: 100px;
   }
-  /* line 49, ../dev/sass/_participants-responsive.scss */
+  /* line 52, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element .circle {
     width: 100px;
     height: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-  /* line 64, ../dev/sass/_participants-responsive.scss */
+  /* line 67, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element {
     height: 140px;
     width: 140px;
   }
-  /* line 67, ../dev/sass/_participants-responsive.scss */
+  /* line 70, ../dev/sass/_participants-responsive.scss */
   .guests .inside div .element .circle {
     width: 140px;
     height: 140px;
