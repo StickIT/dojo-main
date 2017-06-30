@@ -40,7 +40,7 @@ body.home-post-event{
 	.interviews{
 		position:relative;
 		background-image :radial-gradient(50% 100%, $dojo-lightblue 10%, $dojo-darkblue 100%);
-		@include box-shadow(0 0 1px 0 rgba($dojo-blue, 1) inset, 0 0 10px 3px rgba(black, .65) inset);
+		@include box-shadow(0 0 1px 0 rgba(black, .5) inset, 0 0 10px 3px rgba(black, .25) inset);
 		color: #fff;
 		text-align: center;
 
@@ -100,7 +100,7 @@ body.home-post-event{
 				}
 
 				.block{
-					margin: $space-size*2 auto;
+					margin: $space-size*2 auto $space-size*3 auto;
 					width: 75%;
 					@include box-shadow(0 0 1px 0 rgba(black, .70), 0 0 10px 3px rgba(black, .35));
 					// border-width: 2px;
@@ -108,9 +108,15 @@ body.home-post-event{
 					// border-style: solid;
 					// @include border-radius(4px);
 
+					img{
+					    width: 100%;
+					    height: auto;
+					    @include border-radius(2px);
+					}
+
 					.fluid{
 					    position: relative;
-					    padding-bottom: 52.8%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+					    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
 					    padding-top: 30px;
 					    height: 0;
 					    overflow: hidden;
@@ -163,7 +169,7 @@ body.home-post-event{
 
 		background-color: black;
 		// padding-top: $space-size*4;
-		padding-bottom: ($space-size*4)-6px;
+		padding-bottom: $space-size*3;
 		position: relative;
 		width: 100%;
 		text-align: center;
@@ -181,7 +187,7 @@ body.home-post-event{
 			margin:0;
 			background-color: $dojo-darkblue;
 			background-image :radial-gradient(50% 100%, $dojo-lightblue 10%, $dojo-darkblue 100%);
-			@include box-shadow(0 0 1px 0 rgba($dojo-blue, 1) inset, 0 0 10px 3px rgba(black, .65) inset);
+			@include box-shadow(0 0 1px 0 rgba(black, .5) inset, 0 0 10px 3px rgba(black, .25) inset);
 			background-size: 100%;
 			text-align: center;
 			width: 100%;
@@ -204,17 +210,17 @@ body.home-post-event{
 			}
 		}	
 
-	  	&:after{
-	  		content:"";
-	  		position: absolute;
-	  		width:100%;
-	  		height: $space-size;	
-	  		left:0;	
-	  		bottom:0;	  		
-			background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
-			// background:red;
-			@include rotate(180deg);
-	  	}
+	  // 	&:after{
+	  // 		content:"";
+	  // 		position: absolute;
+	  // 		width:100%;
+	  // 		height: $space-size;	
+	  // 		left:0;	
+	  // 		bottom:0;	  		
+			// background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+			// // background:red;
+			// @include rotate(180deg);
+	  // 	}
 
 		.container{
 			a{
@@ -469,7 +475,76 @@ body.home-post-event{
 						font-weight: normal;
 						font-size:$font-size-base;
 						opacity: .8;
-						text-align: justify;
+						text-align: left;
+					}
+					div{
+						text-align: center;
+						.btn{
+							margin-bottom:-($space-size*2.25);
+							display: inline-block;
+							@include border-radius(4px 4px 0 0);
+							padding: $space-size/2 $space-size*2 $space-size/3 $space-size*2; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.news{
+		background-color:$dojo-darkblue;
+		padding-bottom:$space-size*3;
+		position:relative;
+		@include box-shadow(0 0 1px 0 rgba(black, .5) inset, 0 0 10px 3px rgba(black, .25) inset);
+		color: #fff;
+		text-align: center;
+	  	&:after{
+	  		content:"";
+	  		position: absolute;
+	  		width:100%;
+	  		height: $space-size;	
+	  		left:0;
+	  		bottom: 0;		  		
+			background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+			@include rotate(180deg);
+	  	}
+		.card{
+			margin-top: $space-size*3;
+			display: block;
+
+			.thumbnail{
+				background-color:white;
+				text-align: left;
+				padding:0;
+				border-style:none;
+				@include box-shadow(0 0 10px 1px rgba(black,.75));
+
+				img{
+					@include border-radius(4px 4px 0 0);
+				}
+				.caption{
+					padding:$space-size*1.5;
+					color: $dojo-darkblue;
+					h4{
+						margin-top: 0;
+						font-weight: bold;
+						line-height: 22px;
+						margin-bottom:10px;
+						font-size: 20px;
+					}
+					.info{
+						font-size: ($font-size-base)-2px;
+						opacity: .8;
+						margin-bottom:$space-size;
+						i{
+							margin-right: 6px;
+						}
+					}
+					.text{
+						font-weight: normal;
+						font-size:$font-size-base;
+						opacity: .8;
+						text-align: left;
 					}
 					div{
 						text-align: center;
@@ -492,6 +567,7 @@ body.home-post-event{
 	.modal-aftermovie{
 		.modal-dialog{
 			width: 75%;
+			max-width: 1080px;
 			margin: $space-size*6 auto;
 			.modal-content{
 				button.close{

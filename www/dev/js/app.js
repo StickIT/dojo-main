@@ -3,9 +3,9 @@ jQuery(document).ready(function(){
     // Add scrollspy to <body>
     jQuery('body').scrollspy({target: ".navbar", offset: 0}); 
 
-    jQuery("#modalaftermovie .close, #modalaftermovie .btn").live("click", function() {
+    $('#modalaftermovie .close, #modalaftermovie').click(function(){
         jQuery("#modalaftermovie iframe").attr("src", jQuery("#modalaftermovie iframe").attr("src"));
-    });  
+    }) 
 
     // Add smooth scrolling on all links inside the navbar
     jQuery(".navbar-nav a").on('click', function(event) {
@@ -96,21 +96,3 @@ jQuery(document).on('submit', 'form.nlField', function (e) {
 $('.carousel').carousel({
   interval: false
 })
-
-// $(document).ready(function() {
-//     $('#modal-aftermovie').each(function() {
-//         $this = $(this);
-//         $this.on('shown.bs.modal', function() {
-//             toggleVideo('playVideo', $(this));
-//         });
-
-//         $this.on('hidden.bs.modal', function(){
-//            toggleVideo('pauseVideo', $(this));
-//         })
-//    });
-
-//     function toggleVideo(state, div) {
-//         var iframe = div.find("iframe")[0].contentWindow;
-//         iframe.postMessage('{"event":"command","func":"' + state + '","args":""}', '*');
-//     }
-// });
