@@ -1,0 +1,574 @@
+body.home-post-event{
+
+	.container > .navbar-collapse{
+		width: 90% !important;
+	}
+
+	header{
+		.videoHeader{
+			.content{
+				.baseline{
+					@include text-shadow(rgba(black, .5) 1px 1px 3px);
+					line-height: 48px;
+					.red{
+						font-size: 40px;
+					}
+					.subBaseline{
+						@include text-shadow(rgba(black, 0) 1px 1px 3px);
+						border-style: solid;
+						border-width: 1px;
+						@include border-radius(40px);
+						display: inline-block;
+						font-size: 14px;
+						padding: $space-size*0.8 $space-size*1.2;
+						margin-top: $space-size*2;
+						line-height: 14px;
+						&:hover{
+							background-color: white;
+							color: $dojo-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+		
+	.meeting{
+		padding-bottom:$space-size*3;
+	}
+
+	.interviews{
+		position:relative;
+		background-image :radial-gradient(50% 100%, $dojo-lightblue 10%, $dojo-darkblue 100%);
+		@include box-shadow(0 0 1px 0 rgba($dojo-blue, 1) inset, 0 0 10px 3px rgba(black, .65) inset);
+		color: #fff;
+		text-align: center;
+
+		&:before{
+	  		content:"";
+	  		position: absolute;
+	  		width:100%;
+	  		height: $space-size;	
+	  		left:0;
+	  		top: 0;		  		
+			background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+	  	}
+		
+		.title{
+			margin-top: $space-size*2;
+			display: inline-block;
+			font-family: $headline-font;
+			font-size: 30px;
+			font-weight: bold;
+			font-style: italic;
+			text-transform: uppercase;
+			line-height: 30px;
+			letter-spacing: $regular-letterspacing;
+		    z-index: 2;
+		    position: relative;
+		    @include text-shadow(rgba(black, .5) 1px 1px 3px);
+		    .red{
+		    	color: $dojo-primary;
+		    }
+			.subtitle{
+				font-family: $regular-font;
+				font-size: $font-size-h4;
+				font-weight: 300;
+				font-style: normal;
+				letter-spacing: $regular-letterspacing;
+			}	
+		}
+
+		.background{
+			display: block;
+			margin:0;
+			background: url(../resources/bg/dojo-pattern-01b.svg) repeat;
+			background-size: 500px;
+			padding: $space-size 0 0 0;
+			text-align: center;
+
+			.container{
+
+				.baseline{
+					display: block;
+					font-family: $headline-font;
+					font-style: italic;
+					font-size: ($font-size-h3)+2px;
+					text-transform: uppercase;
+					letter-spacing: $regular-letterspacing;
+					@include text-shadow(rgba(black, .5) 1px 1px 3px);
+				}
+
+				.block{
+					margin: $space-size*2 auto;
+					width: 75%;
+					@include box-shadow(0 0 1px 0 rgba(black, .70), 0 0 10px 3px rgba(black, .35));
+					// border-width: 2px;
+					// border-color: $dojo-primary;
+					// border-style: solid;
+					// @include border-radius(4px);
+
+					.fluid{
+					    position: relative;
+					    padding-bottom: 52.8%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+					    padding-top: 30px;
+					    height: 0;
+					    overflow: hidden;
+
+						iframe {
+						    position: absolute;
+						    top: 0; 
+						    left: 0;
+						    width: 100%;
+						    height: 100%;
+						}
+					}
+				}	
+
+				.btn{
+					@include transform(scale(0.9));
+					@include box-shadow(0 0 1px 0 rgba(black, .70), 0 0 10px 3px rgba(black, .35));
+					@include box-shadow(0px 1px 0px rgba(white, .1) inset); 
+					display:inline-block;
+					padding:12px 14px 8px 14px;
+					background:$dojo-blue;
+					@include border-radius(4px 4px 0 0);
+					font-size: $font-size-h4;
+					font-weight: normal;
+					margin-bottom: -3px;
+					margin-top: $space-size/2;
+
+					&:hover, &:focus{
+						background: darken($dojo-blue,15%);
+						color: white;
+					}
+
+					i.fa{
+						margin-right: 6px;
+					}
+
+					img.picto{
+						height: $font-size-h3;
+						width: auto;
+						display: inline-block;
+						margin-top: -4px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}	
+	}
+
+	.gallery{
+
+		background-color: black;
+		// padding-top: $space-size*4;
+		padding-bottom: ($space-size*4)-6px;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		font-size:$font-size-h3;
+		text-transform: uppercase;
+	  	justify-content: center;	  	
+		@include display-flex;
+		@include flex-direction(column);
+	  	@include align-items(center);
+		@include box-shadow(0 -2px 0 0 white inset, 0 2px 0 0 white inset);
+
+		.background{
+
+			display: inline-block;
+			margin:0;
+			background-color: $dojo-darkblue;
+			background-image :radial-gradient(50% 100%, $dojo-lightblue 10%, $dojo-darkblue 100%);
+			@include box-shadow(0 0 1px 0 rgba($dojo-blue, 1) inset, 0 0 10px 3px rgba(black, .65) inset);
+			background-size: 100%;
+			text-align: center;
+			width: 100%;
+			margin-bottom: $space-size*2.5;
+
+			.title{
+
+				img{
+					display: inline-block;
+					height: 46px;
+					margin-top: -6px;
+					margin-right: $space-size/2;
+					width: auto;
+				}
+
+				@include text-shadow(rgba(black, .75) 1px 1px 3px);
+				color: white;
+				padding-top: $space-size*1.75;
+				padding-bottom: $space-size*1.5;
+			}
+		}	
+
+	  	&:after{
+	  		content:"";
+	  		position: absolute;
+	  		width:100%;
+	  		height: $space-size;	
+	  		left:0;	
+	  		bottom:0;	  		
+			background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+			// background:red;
+			@include rotate(180deg);
+	  	}
+
+		.container{
+			a{
+
+			}
+		}
+	}
+
+	.speakers, .press{
+		background-color: white;
+		padding: 20px 0;
+		.title-line{
+			@include display-flex;
+			@include flex-direction(row);
+			@include align-items(center);
+			@include justify-content(center);
+			height: 40px;
+			margin-top: $space-size*2;
+			margin-bottom: $space-size*2;
+			&:before{
+				content:"";
+				position: relative;
+				background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+				background-size: contain;
+				width:100%;
+				height: 100%;
+				@include transform(rotate(180deg) scaleY(.5));
+				flex:1;
+				opacity: .2;
+			}
+			&:after{
+				content:"";
+				position: relative;
+				background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+				background-size: contain;
+				width:100%;
+				height: 100%;
+				@include scaleY(.5);
+				flex:1;
+				opacity: .2;
+			}
+			.text{
+				text-transform: uppercase;
+				color:$dojo-darkblue;
+				padding: 0 $space-size*4;
+				text-align: center;
+				font-size:$font-size-h3;
+				font-weight: bold;
+				letter-spacing: 10px;
+			}
+		}
+		.carousel{
+			.carousel-inner{
+				.item{
+					.portrait{
+						.circle{
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							width: 30%;
+							height: 30%;
+							margin-right: -15px;
+							margin-bottom: -10px;
+							background: url(../resources/bg/guests-bg.svg) no-repeat center center;	
+							background-size: contain;
+							z-index:1;	
+							// opacity: .85;	
+						}	
+						img.logo{
+							width: 70%;
+							height: auto;
+							position: absolute;
+							margin:auto;
+							z-index: 2;
+							top: 50%;
+							left:51%;
+							@include transform(translate(-50%, -50%));
+							text-align: center;
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.carousel-control{
+				background: none;
+				height: 40px;
+			    width: 40px;
+			    top: 44%;
+			    font-size: $font-size-h2;
+			    color: $dojo-primary;
+			    opacity: 1;
+
+			    &:hover{
+			    	opacity: .75;
+			    }
+
+			    &.right{
+			    	margin-right: -($space-size*2);
+			    }
+
+			    &.left{
+			    	margin-left: -($space-size*2);
+			    }
+			}
+		}
+	}
+
+	.guests{
+		padding-top:$space-size;
+		text-align:center;
+		padding-bottom: $space-size*3;
+
+		.title{
+			margin-bottom:$space-size*3;
+		}
+
+		.inside{
+			.text{
+				color:$dojo-darkblue;
+				font-size: $font-size-h3;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-top: $space-size*2;
+			}
+		}
+	}
+
+	.partners{
+		.logo{
+			padding: $space-size*2 0;
+		}
+	}
+
+	.more{
+		text-align:center;
+		background-color: white;
+		// background-color: $dojo-softblue;
+		// @include box-shadow(0 0 1px 0 rgba(black, .90) inset, 0 0 10px 3px rgba(black, .50) inset);
+
+		.subline{
+		color: white;
+		font-size: $font-size-h4;
+		text-transform: uppercase;
+		}
+
+		.btn{
+			@include transform(scale(1.2));
+			@include box-shadow(0px 1px 0px rgba(white, .25) inset);
+			// @include box-shadow(0 0 1px 0 rgba(black, .75), 0 0 10px 3px rgba(black, .25));
+			display:inline-block;
+			// margin-top: $space-size*1.5;
+			margin-bottom: $space-size*1.5;
+			padding:12px 14px 8px 14px;
+			background:$dojo-primary;
+			@include border-radius(4px);
+			font-size: $font-size-h5;
+			text-transform: uppercase;
+			font-weight: normal;
+
+			&:hover, &:focus{
+				background: darken($dojo-primary,15%);
+				color: white;
+			}
+		}
+	}
+
+	.tweets{
+
+		background-color: white;
+		padding-top: $space-size*2;
+		padding-bottom: $space-size;
+
+		.title{
+			position: relative;
+			background: $dojo-darkblue;
+			width: 100%;
+			text-align: center;
+			font-size:$font-size-h3;
+			text-transform: uppercase;
+			letter-spacing: 10px;
+		  	justify-content: center;	  	
+			padding: $space-size*3 0;
+			margin-bottom: $space-size*2;
+			@include display-flex;
+			@include flex-direction(row);
+		  	@include align-items(center);
+			@include box-shadow(0 -2px 0 0 white inset, 0 2px 0 0 white inset);
+		  	&:before{
+		  		content:"";
+		  		position: absolute;
+		  		width:100%;
+		  		height: $space-size;	
+		  		left:0;		
+		  		top: 0;  		
+				background: url(https://www.dojoesport.ninja/bundles/app/resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+				// background:red;
+		  	}
+		  	&:after{
+		  		content:"";
+		  		position: absolute;
+		  		width:100%;
+		  		height: $space-size;	
+		  		left:0;	
+		  		bottom:0;	  		
+				background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+				// background:red;
+				@include rotate(180deg);
+		  	}
+		}
+
+		.container{
+			@include display-flex;
+			@include flex-direction(row);
+			.block-tweet{
+				.twitter-tweet{
+					margin-bottom:$space-size*1.5 !important;
+				}
+			}
+		}
+	}
+
+	.press{
+		padding-bottom:$space-size*3;
+		.card{
+			margin-top: $space-size*3;
+			display: block;
+			.thumbnail{
+				background-color:white;
+				padding:0;
+				img{
+					@include border-radius(4px 4px 0 0);
+				}
+				.caption{
+					padding:$space-size*1.5;
+					color: $dojo-darkblue;
+					h4{
+						margin-top: 0;
+						font-weight: bold;
+						line-height: 22px;
+						margin-bottom:10px;
+						font-size: 20px;
+					}
+					.info{
+						font-size: ($font-size-base)-2px;
+						opacity: .8;
+						margin-bottom:$space-size;
+						i{
+							margin-right: 6px;
+						}
+					}
+					.text{
+						font-weight: normal;
+						font-size:$font-size-base;
+						opacity: .8;
+						text-align: justify;
+					}
+					div{
+						text-align: center;
+						.btn{
+							margin-bottom:-($space-size*2.25);
+							display: inline-block;
+							@include border-radius(4px 4px 0 0);
+							padding: $space-size/2 $space-size*2 $space-size/3 $space-size*2; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.newsletter{
+		padding-bottom: $space-size*5;
+	}
+
+	.modal-aftermovie{
+		.modal-dialog{
+			width: 75%;
+			margin: $space-size*6 auto;
+			.modal-content{
+				button.close{
+					position: absolute;
+					right: 0;
+				    z-index: 10;
+				    font-size: $space-size*2;
+				    margin-right: -($space-size*2);
+				    margin-top: -($space-size*2);
+				    color: $dojo-primary;
+				    opacity: 1;
+				    @include text-shadow(rgba(black, .5) 1px 1px 3px);
+
+				    &:hover{
+				    	opacity: .5;
+				    	@include text-shadow(rgba(black, 0) 1px 1px 3px);
+				    }
+				}
+				.block{
+					margin: auto;
+					width: 100%;
+					// border-width: 2px;
+					// border-color: $dojo-primary;
+					// border-style: solid;
+					// @include border-radius(4px);
+
+					.fluid{
+					    position: relative;
+					    padding-bottom: 53.2%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+					    padding-top: 30px;
+					    height: 0;
+					    overflow: hidden;
+
+						iframe {
+						    position: absolute;
+						    top: 0; 
+						    left: 0;
+						    width: 100%;
+						    height: 100%;
+						}
+					}
+				}	
+			}
+		}
+	}
+
+	.modal-intervenants{
+		.modal-dialog{
+			.modal-content{
+				.photo{
+					.circle{
+						position: absolute;
+					    top: 310px;
+					    right: 0;
+					    width: 25%;
+					    height: 25%;
+					    margin-right: 15px;
+					    margin-bottom: 15px;
+					    background: url(../resources/bg/guests-bg.svg) no-repeat center center;
+					    background-size: contain;
+					    z-index: 1;	
+					    // opacity: .85;	
+					}	
+					img.logo{
+						width: 70%;
+						height: auto;
+						position: absolute;
+						margin:auto;
+						z-index: 2;
+						top: 50%;
+						left:51%;
+						@include transform(translate(-50%, -50%));
+						text-align: center;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}	
+}	

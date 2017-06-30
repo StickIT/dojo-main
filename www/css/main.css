@@ -12271,6 +12271,619 @@ footer .social .icon-social.youtube {
   padding: 0;
 }
 
+/* line 3, ../dev/sass/_home-post-event.scss */
+body.home-post-event .container > .navbar-collapse {
+  width: 90% !important;
+}
+/* line 10, ../dev/sass/_home-post-event.scss */
+body.home-post-event header .videoHeader .content .baseline {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+  line-height: 48px;
+}
+/* line 13, ../dev/sass/_home-post-event.scss */
+body.home-post-event header .videoHeader .content .baseline .red {
+  font-size: 40px;
+}
+/* line 16, ../dev/sass/_home-post-event.scss */
+body.home-post-event header .videoHeader .content .baseline .subBaseline {
+  text-shadow: transparent 1px 1px 3px;
+  border-style: solid;
+  border-width: 1px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 16px 24px;
+  margin-top: 40px;
+  line-height: 14px;
+}
+/* line 26, ../dev/sass/_home-post-event.scss */
+body.home-post-event header .videoHeader .content .baseline .subBaseline:hover {
+  background-color: white;
+  color: #D81313;
+}
+/* line 36, ../dev/sass/_home-post-event.scss */
+body.home-post-event .meeting {
+  padding-bottom: 60px;
+}
+/* line 40, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews {
+  position: relative;
+  background-image: radial-gradient(50% 100%, #27355e 10%, #050f21 100%);
+  -webkit-box-shadow: 0 0 1px 0 #2d4793 inset, 0 0 10px 3px rgba(0, 0, 0, 0.65) inset;
+  box-shadow: 0 0 1px 0 #2d4793 inset, 0 0 10px 3px rgba(0, 0, 0, 0.65) inset;
+  color: #fff;
+  text-align: center;
+}
+/* line 47, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+}
+/* line 57, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .title {
+  margin-top: 40px;
+  display: inline-block;
+  font-family: "jaf-facitweb";
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+  z-index: 2;
+  position: relative;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+}
+/* line 70, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .title .red {
+  color: #D81313;
+}
+/* line 73, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .title .subtitle {
+  font-family: "Gotham";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+/* line 82, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background {
+  display: block;
+  margin: 0;
+  background: url(../resources/bg/dojo-pattern-01b.svg) repeat;
+  background-size: 500px;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+/* line 92, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .baseline {
+  display: block;
+  font-family: "jaf-facitweb";
+  font-style: italic;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+}
+/* line 102, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .block {
+  margin: 40px auto;
+  width: 75%;
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 0 10px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 0 10px 3px rgba(0, 0, 0, 0.35);
+}
+/* line 111, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .block .fluid {
+  position: relative;
+  padding-bottom: 52.8%;
+  /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 118, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .block .fluid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 128, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .btn {
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 0 10px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 0 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  display: inline-block;
+  padding: 12px 14px 8px 14px;
+  background: #2D4793;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: -3px;
+  margin-top: 10px;
+}
+/* line 141, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .btn:hover, body.home-post-event .interviews .background .container .btn:focus {
+  background: #1b2b58;
+  color: white;
+}
+/* line 146, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .btn i.fa {
+  margin-right: 6px;
+}
+/* line 150, ../dev/sass/_home-post-event.scss */
+body.home-post-event .interviews .background .container .btn img.picto {
+  height: 24px;
+  width: auto;
+  display: inline-block;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+/* line 162, ../dev/sass/_home-post-event.scss */
+body.home-post-event .gallery {
+  background-color: black;
+  padding-bottom: 74px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-shadow: 0 -2px 0 0 white inset, 0 2px 0 0 white inset;
+  box-shadow: 0 -2px 0 0 white inset, 0 2px 0 0 white inset;
+}
+/* line 178, ../dev/sass/_home-post-event.scss */
+body.home-post-event .gallery .background {
+  display: inline-block;
+  margin: 0;
+  background-color: #050F21;
+  background-image: radial-gradient(50% 100%, #27355e 10%, #050f21 100%);
+  -webkit-box-shadow: 0 0 1px 0 #2d4793 inset, 0 0 10px 3px rgba(0, 0, 0, 0.65) inset;
+  box-shadow: 0 0 1px 0 #2d4793 inset, 0 0 10px 3px rgba(0, 0, 0, 0.65) inset;
+  background-size: 100%;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* line 190, ../dev/sass/_home-post-event.scss */
+body.home-post-event .gallery .background .title {
+  text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 3px;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+/* line 192, ../dev/sass/_home-post-event.scss */
+body.home-post-event .gallery .background .title img {
+  display: inline-block;
+  height: 46px;
+  margin-top: -6px;
+  margin-right: 10px;
+  width: auto;
+}
+/* line 207, ../dev/sass/_home-post-event.scss */
+body.home-post-event .gallery:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: 0;
+  background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 226, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers, body.home-post-event .press {
+  background-color: white;
+  padding: 20px 0;
+}
+/* line 229, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .title-line, body.home-post-event .press .title-line {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 237, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .title-line:before, body.home-post-event .press .title-line:before {
+  content: "";
+  position: relative;
+  background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -moz-transform: rotate(180deg) scaleY(0.5);
+  -ms-transform: rotate(180deg) scaleY(0.5);
+  -webkit-transform: rotate(180deg) scaleY(0.5);
+  transform: rotate(180deg) scaleY(0.5);
+  flex: 1;
+  opacity: .2;
+}
+/* line 248, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .title-line:after, body.home-post-event .press .title-line:after {
+  content: "";
+  position: relative;
+  background: url(../resources/icons/dojo-icon-line-01.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  flex: 1;
+  opacity: .2;
+}
+/* line 259, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .title-line .text, body.home-post-event .press .title-line .text {
+  text-transform: uppercase;
+  color: #050F21;
+  padding: 0 80px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+/* line 273, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-inner .item .portrait .circle, body.home-post-event .press .carousel .carousel-inner .item .portrait .circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  margin-right: -15px;
+  margin-bottom: -10px;
+  background: url(../resources/bg/guests-bg.svg) no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+}
+/* line 286, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-inner .item .portrait img.logo, body.home-post-event .press .carousel .carousel-inner .item .portrait img.logo {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  top: 50%;
+  left: 51%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+}
+/* line 301, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-control, body.home-post-event .press .carousel .carousel-control {
+  background: none;
+  height: 40px;
+  width: 40px;
+  top: 44%;
+  font-size: 30px;
+  color: #D81313;
+  opacity: 1;
+}
+/* line 310, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-control:hover, body.home-post-event .press .carousel .carousel-control:hover {
+  opacity: .75;
+}
+/* line 314, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-control.right, body.home-post-event .press .carousel .carousel-control.right {
+  margin-right: -40px;
+}
+/* line 318, ../dev/sass/_home-post-event.scss */
+body.home-post-event .speakers .carousel .carousel-control.left, body.home-post-event .press .carousel .carousel-control.left {
+  margin-left: -40px;
+}
+/* line 325, ../dev/sass/_home-post-event.scss */
+body.home-post-event .guests {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+/* line 330, ../dev/sass/_home-post-event.scss */
+body.home-post-event .guests .title {
+  margin-bottom: 60px;
+}
+/* line 335, ../dev/sass/_home-post-event.scss */
+body.home-post-event .guests .inside .text {
+  color: #050F21;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 40px;
+}
+/* line 346, ../dev/sass/_home-post-event.scss */
+body.home-post-event .partners .logo {
+  padding: 40px 0;
+}
+/* line 351, ../dev/sass/_home-post-event.scss */
+body.home-post-event .more {
+  text-align: center;
+  background-color: white;
+}
+/* line 357, ../dev/sass/_home-post-event.scss */
+body.home-post-event .more .subline {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 363, ../dev/sass/_home-post-event.scss */
+body.home-post-event .more .btn {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 12px 14px 8px 14px;
+  background: #D81313;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* line 377, ../dev/sass/_home-post-event.scss */
+body.home-post-event .more .btn:hover, body.home-post-event .more .btn:focus {
+  background: #920d0d;
+  color: white;
+}
+/* line 384, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+/* line 390, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets .title {
+  position: relative;
+  background: #050F21;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  justify-content: center;
+  padding: 60px 0;
+  margin-bottom: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-shadow: 0 -2px 0 0 white inset, 0 2px 0 0 white inset;
+  box-shadow: 0 -2px 0 0 white inset, 0 2px 0 0 white inset;
+}
+/* line 405, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets .title:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background: url(https://www.dojoesport.ninja/bundles/app/resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+}
+/* line 415, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets .title:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: 0;
+  background: url(../resources/icons/dojo-icon-brush-paint-01.svg) repeat-x center center;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 428, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+/* line 432, ../dev/sass/_home-post-event.scss */
+body.home-post-event .tweets .container .block-tweet .twitter-tweet {
+  margin-bottom: 30px !important;
+}
+/* line 439, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press {
+  padding-bottom: 60px;
+}
+/* line 441, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card {
+  margin-top: 60px;
+  display: block;
+}
+/* line 444, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail {
+  background-color: white;
+  padding: 0;
+}
+/* line 447, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail img {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+/* line 450, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption {
+  padding: 30px;
+  color: #050F21;
+}
+/* line 453, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption h4 {
+  margin-top: 0;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+/* line 460, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption .info {
+  font-size: 12px;
+  opacity: .8;
+  margin-bottom: 20px;
+}
+/* line 464, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption .info i {
+  margin-right: 6px;
+}
+/* line 468, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption .text {
+  font-weight: normal;
+  font-size: 14px;
+  opacity: .8;
+  text-align: justify;
+}
+/* line 474, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption div {
+  text-align: center;
+}
+/* line 476, ../dev/sass/_home-post-event.scss */
+body.home-post-event .press .card .thumbnail .caption div .btn {
+  margin-bottom: -45px;
+  display: inline-block;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 40px 6.66667px 40px;
+}
+/* line 488, ../dev/sass/_home-post-event.scss */
+body.home-post-event .newsletter {
+  padding-bottom: 100px;
+}
+/* line 493, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog {
+  width: 75%;
+  margin: 120px auto;
+}
+/* line 497, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog .modal-content button.close {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  font-size: 40px;
+  margin-right: -40px;
+  margin-top: -40px;
+  color: #D81313;
+  opacity: 1;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+}
+/* line 508, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog .modal-content button.close:hover {
+  opacity: .5;
+  text-shadow: transparent 1px 1px 3px;
+}
+/* line 513, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog .modal-content .block {
+  margin: auto;
+  width: 100%;
+}
+/* line 521, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog .modal-content .block .fluid {
+  position: relative;
+  padding-bottom: 53.2%;
+  /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 528, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-aftermovie .modal-dialog .modal-content .block .fluid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 545, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-intervenants .modal-dialog .modal-content .photo .circle {
+  position: absolute;
+  top: 310px;
+  right: 0;
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background: url(../resources/bg/guests-bg.svg) no-repeat center center;
+  background-size: contain;
+  z-index: 1;
+}
+/* line 558, ../dev/sass/_home-post-event.scss */
+body.home-post-event .modal-intervenants .modal-dialog .modal-content .photo img.logo {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  top: 50%;
+  left: 51%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 3, ../dev/sass/_archives.scss */
+body.archives .container > .navbar-collapse {
+  width: 90% !important;
+}
+/* line 10, ../dev/sass/_archives.scss */
+body.archives header .videoHeader .content .baseline {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+  line-height: 48px;
+  font-size: 36px;
+}
+/* line 14, ../dev/sass/_archives.scss */
+body.archives header .videoHeader .content .baseline .red {
+  font-size: 40px;
+}
+/* line 24, ../dev/sass/_archives.scss */
+body.archives .guests .container .title .text {
+  text-transform: uppercase;
+}
+
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   /* line 4, ../dev/sass/_home-responsive.scss */
   body:before {

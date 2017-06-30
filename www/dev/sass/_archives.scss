@@ -1,0 +1,30 @@
+body.archives{
+
+	.container > .navbar-collapse{
+		width: 90% !important;
+	}
+
+	header{
+		.videoHeader{
+			.content{
+				.baseline{
+					@include text-shadow(rgba(black, .5) 1px 1px 3px);
+					line-height: 48px;
+					font-size: $font-size-h1;
+					.red{
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+	.guests{
+		.container{
+			.title{
+				.text{
+					text-transform: uppercase;
+				}
+			}
+		}
+	}	
+}	
